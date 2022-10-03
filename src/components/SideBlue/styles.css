@@ -1,0 +1,16 @@
+.side-blue-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27%;
+    height: 100vh;
+    background-color: #319AC0;
+    margin-left: 250px;
+}
+.orange-ball {
+    margin: 0px 25px 0px 25px;
+    width: 440px;
+    height: 451px;
+    border-radius: 50%;
+    background: linear-gradient(324.93deg, #FDAE50 0.74%, #319AC0 100%);
+}
