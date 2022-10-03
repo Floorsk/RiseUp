@@ -1,0 +1,115 @@
+* {
+    font-family: 'Inter';
+}
+.register-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.register {
+    display: flex;
+    width: 73%;
+    margin: 3rem;
+    padding-left: 3rem;
+}
+.register-header {
+    justify-content: space-between;
+}
+.back-button {
+    margin-bottom: 40px;
+}
+.back-button a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #2B2C33;
+}
+.title h1 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Space Grotesk';
+}
+.title h2 {
+    margin-top: 15px;
+    font-size: 22px;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+.register-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #319AC0;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.jobs-area {
+    margin-top: 42px;
+}
+#jobs-area-label {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 4px;
+}
+.jobs-location {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+}
+#jobs-location-label {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 4px;
+}
+.jobs-function {
+    margin-top: 18px;
+}
+#jobs-function-label {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 4px;
+}
+.jobs-section {
+    margin-top: 18px;   
+}
+#jobs-section-label {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 4px;
+}
+.jobs-hours {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;   
+}
+#jobs-hours-label {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 4px;
+}
+.residence-area {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;   
+}
+#residence-area-label {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 4px;
+}
+.button-advance {
+    width: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
