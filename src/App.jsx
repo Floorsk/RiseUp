@@ -1,11 +1,12 @@
 import './App.css';
 import { RegisterStudent } from './pages/RegisterStudent';
 import { StudentForms } from './pages/StudentForms';
+import { StudentSkills } from './pages/SudentSkills';
 
 function App() {
   return (
     <div className="App">
-      <StudentForms/>
+      <StudentSkills/>
     </div>
   );
 }

@@ -44,39 +44,21 @@
     position: absolute;
     border-radius: 10px;
 }
-.input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0rem;
-    margin: 72px 0px 72px 0px;
+.skill-group {
+    margin-top: 42px;   
 }
-.input-box {
-    display: flex;
-    justify-content: space-between;
-    width: 750px;
-    margin-bottom: 40px;
-}
-.select-box {
-    display: flex;
-    width: 750px;
-    justify-content: space-between;
-}
-.institution-info {
-    display: flex;
-    width: 53%;
-    justify-content: space-between;
-}
-.shift {
-    margin-top: 40px;
-}
-#shift-group-label {
-    font-size: 25px;
+#question-label {
     font-weight: 600;
+    font-size: 22px;
     color: #000000;
+    margin-bottom: 4px;  
 }
-.button-advance {
+.checkbox-group-area {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
+}
+.checkbox-group {
+    padding-bottom: 5px;
+}
+.checkbox-outro {
+    margin-top: -5px;
 }
