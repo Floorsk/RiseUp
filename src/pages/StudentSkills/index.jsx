@@ -1,6 +1,13 @@
-import { FormLabel, FormControlLabel, FormGroup, Checkbox, Button } from '@mui/material';
-import { SideBlue } from '../../components/SideBlue';
 import './styles.css'
+import {
+    FormLabel,
+    FormControlLabel,
+    FormGroup,
+    Checkbox,
+    Button
+} from '@mui/material';
+import { AiOutlineLeft } from 'react-icons/ai';
+import { SideBlue } from '../../components/SideBlue';
 
 export const StudentSkills = () => {
     return(
@@ -13,7 +20,10 @@ export const StudentSkills = () => {
                     <form action="#" id='skills-form'>
                         <div className="register-header">
                             <div className="back-button">
-                                <a href="">Voltar</a>
+                                <div className="back-arrow">
+                                    <AiOutlineLeft/>
+                                </div>
+                                <a href="StudentForms">Voltar</a>
                             </div>
                             <div className="title">
                                 <h1>Cadastro</h1>

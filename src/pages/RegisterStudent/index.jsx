@@ -1,6 +1,18 @@
 import './styles.css';
+import {
+    TextField,
+    Select,
+    MenuItem,
+    InputLabel,
+    FormControl,
+    RadioGroup,
+    FormControlLabel,
+    FormLabel,
+    Radio,
+    Button
+} from '@mui/material';
 import { useState } from 'react';
-import { TextField, Select, MenuItem, InputLabel, FormControl, RadioGroup, FormControlLabel, FormLabel, Radio, Button } from '@mui/material';
+import { AiOutlineLeft } from 'react-icons/ai';
 import { SideBlue } from '../../components/SideBlue';
 
 export const RegisterStudent = () => {
@@ -32,7 +44,10 @@ export const RegisterStudent = () => {
                 <form action="#" id="register-form">
                     <div className="register-header">
                         <div className="back-button">
-                            <a href="">Voltar</a>
+                            <div className="back-arrow">
+                                <AiOutlineLeft/>
+                            </div>
+                            <a href="LandingPage">Voltar</a>
                         </div>
                         <div className="title">
                             <h1>Cadastro</h1>
@@ -152,6 +167,7 @@ export const RegisterStudent = () => {
                                     weight: '700',
                                     backgroundColor: '#000000'
                                 }}
+                                href=".././StudentForms"
                             >
                                 Avançar
                             </Button>

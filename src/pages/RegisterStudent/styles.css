@@ -16,11 +16,16 @@
     justify-content: space-between;
 }
 .back-button {
+    display: flex;
     margin-bottom: 10px;
 }
 .back-button a {
     font-weight: 600;
     text-decoration: none;
+    color: #2B2C33;
+}
+.back-arrow {
+    margin-top: 2px;
     color: #2B2C33;
 }
 .title h1 {

@@ -1,6 +1,15 @@
 import './styles.css';
+import {
+    FormControlLabel,
+    Radio,
+    RadioGroup,
+    FormLabel,
+    FormControl,
+    TextField,
+    Button
+} from '@mui/material';
 import { SideBlue } from '../../components/SideBlue';
-import { FormControlLabel, Radio, RadioGroup, FormLabel, FormControl, TextField, Button } from '@mui/material';
+import { AiOutlineLeft } from 'react-icons/ai';
 
 export const StudentForms = () => {
     return(
@@ -13,7 +22,10 @@ export const StudentForms = () => {
                 <form action="#" id="info-forms">
                     <div className="register-header">
                         <div className="back-button">
-                            <a href="">Voltar</a>
+                            <div className="back-arrow">
+                                <AiOutlineLeft/>
+                            </div>
+                            <a href="/">Voltar</a>
                         </div>
                         <div className="title">
                             <h1>Cadastro</h1>
@@ -100,6 +112,7 @@ export const StudentForms = () => {
                                 weight: '700',
                                 backgroundColor: '#000000'
                             }}
+                            href="StudentSkills"
                         >
                             Avançar
                         </Button>
