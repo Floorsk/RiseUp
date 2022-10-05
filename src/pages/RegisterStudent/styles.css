@@ -6,8 +6,13 @@
     height: 100vh;
     display: flex;
 }
+.side-blue {
+    width: 490px;
+    margin-left: 250px;
+}
 .register {
     display: flex;
+    position: relative;
     width: 73%;
     margin: 3rem;
     padding-left: 3rem;
@@ -84,4 +89,125 @@
     align-items: center;
     justify-content: center;
     margin: 50px;
+}
+@media screen and (max-width: 1695px) {
+    .side-blue {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 1439px) {
+    .side-blue {
+        display: none;
+        margin-left: 0px;
+    }
+    #register-form {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 22%;
+    }
+    .register {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .side-blue {
+        display: none;
+        margin-left: 0px;
+    }
+    #register-form {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 13%;
+    }
+    .register {
+        width: 100%;
+    }   
+}
+@media screen and (max-width: 999px) {
+    .side-blue {
+        display: none;
+        margin-left: 0px;
+    }
+    .register {
+        width: 100%;
+    }
+    #register-form {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        word-wrap: break-word;
+        width: 300px;
+        height: 130px;
+        margin-bottom: 15px;
+    }
+    .select-box {
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+    }
+    .select-box :last-child {
+        width: 130px;
+    }
+    .institution-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    .institution-info :first-child {
+        margin-right: 1.3rem;
+    }
+    .button-advance {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 671px) {
+    .side-blue {
+        display: none;
+        margin-left: 0px;
+    }
+    .register {
+        width: 100%;
+    }
+    #register-form {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-left: -50px;
+    }
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        word-wrap: break-word;
+        width: 300px;
+        height: 130px;
+        margin-bottom: 15px;
+    }
+    .select-box {
+        display: block;
+        width: 300px;
+        justify-content: space-between;
+    }
+    .select-box :last-child {
+        width: 130px;
+    }
+    .institution {
+        margin-bottom: 15px;
+    }
+    .institution-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    .institution-info :first-child {
+        margin-right: 1.3rem;
+    }
+    .button-advance {
+        width: 300px;
+    }
 }

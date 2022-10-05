@@ -38,7 +38,9 @@ export const RegisterStudent = () => {
     return(
         <div className="register-container">
 
-            <SideBlue/>
+            <div className="side-blue">
+                <SideBlue/>
+            </div>
 
             <div className="register">
                 <form action="#" id="register-form">
@@ -110,32 +112,36 @@ export const RegisterStudent = () => {
                             </div>
 
                             <div className="institution-info">
-                                <FormControl>
-                                    <InputLabel id='course-name'>Curso</InputLabel>
-                                    <Select
-                                        labelId='course-name'
-                                        label="Curso"
-                                        value={course}
-                                        onChange={handleChangeCourse}
-                                        sx={{width: '185px', color: '#2B2C33'}}
-                                    >
-                                        <MenuItem value={1}>Sistemas Para Internet</MenuItem>
-                                        <MenuItem value={2}>Análise e Desenvolvimento de Sistemas</MenuItem>
-                                    </Select>
-                                </FormControl>
-                                <FormControl>
-                                    <InputLabel id='classes-info'>Turma</InputLabel>
-                                    <Select
-                                        labelId='classes-info'
-                                        label="Turma"
-                                        value={classes}
-                                        onChange={handleChangeClasses}
-                                        sx={{width: '185px'}}
-                                    >
-                                        <MenuItem value={1}>SIN - 0017</MenuItem>
-                                        <MenuItem value={2}>SIN - 0020</MenuItem>                                          
-                                    </Select>
-                                </FormControl>
+                                <div className="institution-info-course">
+                                    <FormControl>
+                                        <InputLabel id='course-name'>Curso</InputLabel>
+                                        <Select
+                                            labelId='course-name'
+                                            label="Curso"
+                                            value={course}
+                                            onChange={handleChangeCourse}
+                                            sx={{width: '185px', color: '#2B2C33'}}
+                                        >
+                                            <MenuItem value={1}>Sistemas Para Internet</MenuItem>
+                                            <MenuItem value={2}>Análise e Desenvolvimento de Sistemas</MenuItem>
+                                        </Select>
+                                    </FormControl>
+                                </div>
+                                <div className="institution-info-classes">
+                                    <FormControl>
+                                        <InputLabel id='classes-info'>Turma</InputLabel>
+                                        <Select
+                                            labelId='classes-info'
+                                            label="Turma"
+                                            value={classes}
+                                            onChange={handleChangeClasses}
+                                            sx={{width: '185px'}}
+                                        >
+                                            <MenuItem value={1}>SIN - 0017</MenuItem>
+                                            <MenuItem value={2}>SIN - 0020</MenuItem>
+                                        </Select>
+                                    </FormControl>
+                                </div>
                             </div>
 
                         </div>
