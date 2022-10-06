@@ -50,13 +50,16 @@
     border-radius: 10px;
 }
 .skill-group {
-    margin-top: 42px;   
+    margin-top: 42px; 
+}
+.hard-skills {
+    margin-bottom: 30px;
 }
 #question-label {
     font-weight: 600;
     font-size: 22px;
     color: #000000;
-    margin-bottom: 4px;  
+    margin-bottom: 4px;
 }
 .checkbox-group-area {
     display: flex;
@@ -68,7 +71,7 @@
     margin-top: -5px;
 }
 .checkbox-group :last-child {
-    font-family: 'Space Grotesk';
+    font-family: 'Roboto';
 }
 @media screen and (max-width: 1709px) {
     .student-skills-container {
