@@ -67,6 +67,9 @@
 .checkbox-outro {
     margin-top: -5px;
 }
+.checkbox-group :last-child {
+    font-family: 'Space Grotesk';
+}
 @media screen and (max-width: 1709px) {
     .student-skills-container {
         height: 100%;
@@ -101,5 +104,8 @@
     }
     #question-label {
         font-size: 16px;
+    }
+    .checkbox-group :last-child {
+        font-size: 14px;
     }
 }
