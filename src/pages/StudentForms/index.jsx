@@ -1,4 +1,4 @@
-import './forms.css';
+import './styles.css';
 import {
     FormControlLabel,
     Radio,
@@ -13,13 +13,15 @@ import { AiOutlineLeft } from 'react-icons/ai';
 
 export const StudentForms = () => {
     return(
-        <div className="register-container">
+        <div className="student-forms-container">
 
-            <SideBlue/>
+            <div className="side-blue">
+                <SideBlue/>
+            </div>
 
             <div className="register">
 
-                <form action="#" id="info-forms">
+                <form action="#" id="info-form">
                     <div className="register-header">
                         <div className="back-button">
                             <div className="back-arrow">
