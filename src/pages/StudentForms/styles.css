@@ -52,40 +52,22 @@
 .jobs-area {
     margin-top: 42px;
 }
-#jobs-area-label {
+#forms-label {
     font-weight: 600;
     font-size: 22px;
     color: #000000;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 .jobs-location {
     display: flex;
     flex-direction: column;
     margin-top: 18px;
 }
-#jobs-location-label {
-    font-weight: 600;
-    font-size: 22px;
-    color: #000000;
-    margin-bottom: 4px;
-}
 .jobs-function {
     margin-top: 18px;
 }
-#jobs-function-label {
-    font-weight: 600;
-    font-size: 22px;
-    color: #000000;
-    margin-bottom: 4px;
-}
 .jobs-section {
     margin-top: 18px;   
-}
-#jobs-section-label {
-    font-weight: 600;
-    font-size: 22px;
-    color: #000000;
-    margin-bottom: 4px;
 }
 .jobs-hours {
     margin-top: 22px;
@@ -93,23 +75,11 @@
     flex-direction: column;
     margin-top: 18px;   
 }
-#jobs-hours-label {
-    font-weight: 600;
-    font-size: 22px;
-    color: #000000;
-    margin-bottom: 4px;
-}
 .residence-area {
     margin-top: 22px;
     display: flex;
     flex-direction: column;
     margin-top: 18px;   
-}
-#residence-area-label {
-    font-weight: 600;
-    font-size: 22px;
-    color: #000000;
-    margin-bottom: 4px;
 }
 .button-advance {
     display: flex;
@@ -136,5 +106,8 @@
         align-items: center;
         justify-content: center;
         margin-left: -71px;
+    }
+    #forms-label {
+        font-size: 16px;
     }
 }

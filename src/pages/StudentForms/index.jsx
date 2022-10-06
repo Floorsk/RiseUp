@@ -37,7 +37,7 @@ export const StudentForms = () => {
 
                     <div className="jobs-area">
                         <FormControl>
-                            <FormLabel id="jobs-area-label">Você trabalha/estagia atualmente?</FormLabel>
+                            <FormLabel id="forms-label">Você trabalha/estagia atualmente?</FormLabel>
                             <RadioGroup
                                 row
                                 aria-aria-aria-labelledby='jobs-area-label'
@@ -50,7 +50,7 @@ export const StudentForms = () => {
                     </div>
 
                     <div className="jobs-location">  
-                        <FormLabel id="jobs-location-label">Se sim, onde?</FormLabel>
+                        <FormLabel id="forms-label">Se sim, onde?</FormLabel>
                         <TextField
                             sx={{width: '358px', color: '#2B2C33'}}
                         />
@@ -58,7 +58,7 @@ export const StudentForms = () => {
 
                     <div className="jobs-function">
                         <FormControl>
-                            <FormLabel id="jobs-function-label">É uma empresa de tecnologia?</FormLabel>
+                            <FormLabel id="forms-label">É uma empresa de tecnologia?</FormLabel>
                             <RadioGroup
                                 row
                                 aria-aria-aria-labelledby='job-area-label'
@@ -71,7 +71,7 @@ export const StudentForms = () => {
                     </div>
 
                     <div className="jobs-section">
-                        <FormLabel id="jobs-section-label">Se sim, trabalha no setor de tecnologia dela?</FormLabel>
+                        <FormLabel id="forms-label">Se sim, trabalha no setor de tecnologia dela?</FormLabel>
                         <RadioGroup
                             row
                             aria-aria-aria-labelledby='job-area-label'
@@ -83,14 +83,14 @@ export const StudentForms = () => {
                     </div>
 
                     <div className="jobs-hours">
-                        <FormLabel id="jobs-hours-label">Em qual horário?</FormLabel>
+                        <FormLabel id="forms-label">Em qual horário?</FormLabel>
                         <TextField
                             sx={{width: '358px', color: '#2B2C33'}}
                         />
                     </div>
 
                     <div className="residence-area">
-                        <FormLabel id="residence-area-label">Você já participou da Residência Onboard?</FormLabel>
+                        <FormLabel id="forms-label">Você já participou da Residência Onboard?</FormLabel>
 
                         <RadioGroup
                             row
