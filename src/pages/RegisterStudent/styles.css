@@ -1,7 +1,7 @@
 * {
     font-family: 'Inter';
 }
-.register-container {
+.register-student-container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -90,7 +90,15 @@
     justify-content: center;
     margin: 50px;
 }
+@media screen and (max-width: 1709px) {
+    .register-student-container {
+        height: 100%;
+    }
+}
 @media screen and (max-width: 1695px) {
+    .register-student-container {
+        height: 100%;
+    }
     .side-blue {
         margin-left: 0px;
     }
@@ -178,7 +186,7 @@
         width: 100%;
         align-items: center;
         justify-content: center;
-        margin-left: -50px;
+        margin-left: -71px;
     }
     .input-box {
         display: flex;
@@ -208,6 +216,6 @@
         margin-right: 1.3rem;
     }
     .button-advance {
-        width: 300px;
+        width: 250px;
     }
 }

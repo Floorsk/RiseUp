@@ -36,7 +36,7 @@ export const RegisterStudent = () => {
     };
 
     return(
-        <div className="register-container">
+        <div className="register-student-container">
 
             <div className="side-blue">
                 <SideBlue/>
