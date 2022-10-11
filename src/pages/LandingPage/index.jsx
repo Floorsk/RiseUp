@@ -1,5 +1,9 @@
 import './styles.css'
+<<<<<<< HEAD
 import { Button } from '@mui/material'
+=======
+import Button from '@mui/material/Button';
+>>>>>>> 2295961a71aed5e779fb19c446241230a673a534
 
 export const LandingPage = () => {
     return (
@@ -11,12 +15,12 @@ export const LandingPage = () => {
                         
                         <div className="info-text">
                             <h1>Residência Onboard</h1>
-                            <h2>A maior residência em Software do Norte e<br/> Nordeste. O Onboard é uma iniciativa do Porto<br/> Digital em parceria com instituições de ensino<br/> superior, conectando jovens talentos à grandes<br/> empresas.</h2>
+                            <h2>A maior residência em Software do Norte e Nordeste. O Onboard é uma iniciativa do Porto Digital em parceria com instituições de ensino superior, conectando jovens talentos à grandes empresas.</h2>
                             
                         </div>
 
                         <div className="info-button">
-                            <p>Faça como mais de 2000 participantes e conheça o<br/> nosso programa pedagógico</p>
+                            <p>Faça como mais de 2000 participantes e conheça o nosso programa pedagógico</p>
                             
                             <div className="button-area">
                                 <Button 
@@ -59,7 +63,7 @@ export const LandingPage = () => {
                 </div>
                 <div className="numbers">
                     <div className="numbers-text">
-                        <p>Confira nossos números e participe você também</p>
+                        <h4>Confira nossos números e participe você também</h4>
                     </div>
                     <div className="numbers-stud">
                         {/* stud: students */}

@@ -17,8 +17,8 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          {/* <Route exact path="/" element={<LandingPage/>}/> */}
-          <Route exact path="/" element={<LoginPorto/>}/>
+          <Route exact path="/" element={<LandingPage/>}/>
+          <Route exact path="/LoginPorto" element={<LoginPorto/>}/>
           <Route path="/RegisterStudent" element={<RegisterStudent/>}/>
           <Route path="/StudentForms" element={<StudentForms/>}/>
           <Route path="/StudentSkills" element={<StudentSkills/>}/>
