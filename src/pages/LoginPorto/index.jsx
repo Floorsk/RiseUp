@@ -49,9 +49,9 @@ export const LoginPorto = () => {
                             weight: '700',
                             backgroundColor: '#000000'
                         }}
-                        href=".././StudentForms"
+                        href=".././Dashboard"
                     >
-                        Avançar
+                        Entrar
                     </Button>
                 </div>
             </div>

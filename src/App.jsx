@@ -10,6 +10,7 @@ import { StudentForms } from './pages/StudentForms';
 import { StudentSkills } from './pages/StudentSkills';
 import { LandingPage } from './pages/LandingPage'; 
 import { LoginPorto } from './pages/LoginPorto';
+import { Dashboard } from './pages/Dashboard';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/StudentForms" element={<StudentForms/>}/>
           <Route path="/StudentSkills" element={<StudentSkills/>}/>
           <Route path="/LoginPorto" element={<LoginPorto/>}/>
+          <Route path="/Dashboard" element={<Dashboard/>}/>
         </Routes>
       </div>
     </Router>
