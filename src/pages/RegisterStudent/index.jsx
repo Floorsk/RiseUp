@@ -49,7 +49,7 @@ export const RegisterStudent = () => {
                             <div className="back-arrow">
                                 <AiOutlineLeft/>
                             </div>
-                            <a href="LandingPage">Voltar</a>
+                            <a href="/">Voltar</a>
                         </div>
                         <div className="title">
                             <h1>Cadastro</h1>

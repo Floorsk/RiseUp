@@ -33,6 +33,9 @@
     margin-top: 2px;
     color: #2B2C33;
 }
+.title {
+    flex-direction: column;
+}
 .title h1 {
     font-size: 48px;
     font-weight: 700;
@@ -42,7 +45,7 @@
     margin-top: 15px;
     font-size: 22px;
     font-family: 'Inter';
-    font-weight: 400;
+    font-weight: 300;
 }
 .register-header h1::after {
     content: '';
@@ -81,7 +84,7 @@
 }
 #shift-group-label {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 400;
     color: #000000;
 }
 .button-advance {

@@ -37,7 +37,7 @@
     margin-top: 15px;
     font-size: 22px;
     font-family: 'Inter';
-    font-weight: 400;
+    font-weight: 300;
 }
 .register-header h1::after {
     content: '';
@@ -55,6 +55,7 @@
 #forms-label {
     font-weight: 600;
     font-size: 22px;
+    font-weight: 400;
     color: #000000;
     margin-bottom: 5px;
 }

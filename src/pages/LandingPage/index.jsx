@@ -1,9 +1,5 @@
 import './styles.css'
-<<<<<<< HEAD
 import { Button } from '@mui/material'
-=======
-import Button from '@mui/material/Button';
->>>>>>> 2295961a71aed5e779fb19c446241230a673a534
 
 export const LandingPage = () => {
     return (
@@ -34,6 +30,7 @@ export const LandingPage = () => {
                                         weight: '700',
                                         backgroundColor: '#000000'
                                     }}
+                                    href="/RegisterStudent"
                                 >
                                     estudante
                                 </Button>

@@ -27,7 +27,7 @@ export const StudentForms = () => {
                             <div className="back-arrow">
                                 <AiOutlineLeft/>
                             </div>
-                            <a href="/">Voltar</a>
+                            <a href="/RegisterStudent">Voltar</a>
                         </div>
                         <div className="title">
                             <h1>Cadastro</h1>

@@ -87,7 +87,7 @@ export const StudentSkills = () => {
                         </div>
 
                         <div className="soft-skills">
-                            <FormLabel id="question-label">Você tem alguma experiência com alguma das tecnologias abaixo? Selecione as três que mais se identifica.</FormLabel>
+                            <FormLabel id="question-label">Você tem alguma experiência com alguma das habilidades abaixo? Selecione as três que mais se identifica.</FormLabel>
 
                             <div className="checkbox-group-area">
 
