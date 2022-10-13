@@ -11,6 +11,7 @@ import { StudentSkills } from './pages/StudentSkills';
 import { LandingPage } from './pages/LandingPage'; 
 import { LoginPorto } from './pages/LoginPorto';
 import { Dashboard } from './pages/Dashboard';
+import { RegisterCompany } from './pages/RegisterCompany';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/StudentSkills" element={<StudentSkills/>}/>
           <Route path="/LoginPorto" element={<LoginPorto/>}/>
           <Route path="/Dashboard" element={<Dashboard/>}/>
+          <Route path="/RegisterCompany" element={<RegisterCompany/>}/>
         </Routes>
       </div>
     </Router>

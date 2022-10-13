@@ -1,0 +1,26 @@
+.week {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+    .monday {
+      display: block;
+     
+    }
+  
+    .tuesday {
+      display: block;
+    }
+  
+    .wednesday {
+      display: block;
+    }
+  
+    .thursday {
+      display: block;
+    }
+    
+    .friday {
+      display: block;
+    }

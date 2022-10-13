@@ -83,10 +83,12 @@ export const RegisterStudent = () => {
                         <div className="input-box">
                             <TextField
                                 label="Telefone"
+                                type={'number'}
                                 sx={{width: '358px', color: '#2B2C33'}}
                             />
                             <TextField
                                 label="C.P.F"
+                                type={'number'}
                                 sx={{width: '358px', color: '#2B2C33'}}
                             />
                         </div>
