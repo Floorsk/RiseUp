@@ -27,14 +27,14 @@ export const RegisterCompany = (props) => {
 
 
     return (
-        <div className="register-student-container">
+        <div className="register-company-container">
 
             <div className="side-blue">
                 <SideBlue />
             </div>
 
             <div className="register">
-                <form action="#" id="register-form">
+                <form action="#" id="register-form-company">
                     <div className="register-header">
                         <div className="back-button">
                             <div className="back-arrow">

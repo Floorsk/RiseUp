@@ -1,4 +1,5 @@
 import './styles.css'
+import  img1  from './download.jfif'
 import { Button } from '@mui/material'
 
 export const LandingPage = () => {
@@ -45,6 +46,7 @@ export const LandingPage = () => {
                                         weight: '700',
                                         backgroundColor: '#000000'
                                     }}
+                                    href="/RegisterCompany"
                                 >
                                     empresa
                                 </Button>
@@ -54,7 +56,7 @@ export const LandingPage = () => {
                     </div>
 
                     <div className="info-images">
-                        <img src="" />
+                        <img src={img1} />
                     </div>
 
                 </div>

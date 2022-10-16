@@ -19,10 +19,11 @@
     margin: 15px 0px;
     font-size: 20px;
     font-family: 'Inter';
+    font-weight: 400;
   }
   
   
-  .register-student-container {
+  .register-company-container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -39,6 +40,12 @@
     width: 73%;
     margin: 3rem;
     padding-left: 3rem;
+    flex-direction: column;
+    z-index: 5;
+    padding-right: 5rem;
+    max-height: 100vh;
+    overflow-y: scroll;
+    flex-wrap: nowrap; 
   }
   
   .register-header {
@@ -165,7 +172,6 @@
     .register-student-container {
       height: 100%;
     }
-  
     .side-blue {
       margin-left: 0px;
     }
@@ -195,11 +201,11 @@
       margin-left: 0px;
     }
   
-    #register-form {
+    #register-form-company {
       width: 100%;
       align-items: center;
       justify-content: center;
-      margin-left: 13%;
+      margin-left: 0%;
     }
   
     .register {
@@ -217,7 +223,7 @@
       width: 100%;
     }
   
-    #register-form {
+    #register-form-company {
       width: 100%;
       align-items: center;
       justify-content: center;
@@ -237,21 +243,7 @@
       display: flex;
       width: 300px;
       justify-content: space-between;
-    }
-  
-    .select-box :last-child {
-      width: 130px;
-    }
-  
-    .institution-info {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .institution-info :first-child {
-      margin-right: 1.3rem;
-    }
-  
+    }  
     .button-advance {
       width: 300px;
     }
@@ -265,15 +257,17 @@
   
     .register {
       width: 100%;
+      margin: 1.5rem;
     }
   
-    #register-form {
+    #register-form-company {
       width: 100%;
       align-items: center;
       justify-content: center;
-      margin-left: -71px;
+      padding-left: 0px;
+      margin-left: -31px;
     }
-  
+
     .input-box {
       display: flex;
       flex-direction: column;
@@ -284,4 +278,10 @@
       margin-bottom: 15px;
     }
   
+    .input-box :last-child {
+      width: 298px;
+    }
+    .button-advance {
+      width: 220px;
+    }
   }
