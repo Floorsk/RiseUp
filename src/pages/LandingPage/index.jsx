@@ -72,7 +72,7 @@ export const LandingPage = () => {
                     
                     <div className="numbers-stud">
                         {/* stud: students */}
-                        <div className="icon-i">< AiOutlineUser /></div>
+                        <div className="icon-i">< AiOutlineUser size={40}/></div>
 
                         <div className="text">
                             <h2>+2500</h2>
@@ -82,7 +82,7 @@ export const LandingPage = () => {
 
                     <div className="numbers-comp">
                         {/* c: companies */}
-                        <div className="icon-ii">< FiBriefcase /></div>
+                        <div className="icon-ii">< FiBriefcase size={40}/></div>
 
                         <div className="text">
                             <h2>+60</h2>
@@ -92,7 +92,7 @@ export const LandingPage = () => {
                     
                     <div className="numbers-uni">
                         {/* u: universities */}
-                        <div className="icon-iii">< FiAward /></div>
+                        <div className="icon-iii">< FiAward size={40}/></div>
 
                         <div className="text">
                             <h2>+12</h2>

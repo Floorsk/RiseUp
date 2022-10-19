@@ -17,17 +17,17 @@
     justify-content: center;
     flex-direction: column;
 }
-.title {
+.login-title {
     display: flex;
     justify-content: center;
 }
-.login h1 {
+.login-title h1 {
     font-family: 'Space Grotesk';
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 50px;
 }
-.login h1::after {
+.login-title h1::after {
     content: '';
     display: block;
     width: 16.3rem;
@@ -60,7 +60,7 @@
     align-items: center;
     justify-content: center;
     margin-right: 5px;
-    background-color: #FDAE50;
+    /* background-color: #FDAE50; */
     border-radius: 5px;
 }
 .password {

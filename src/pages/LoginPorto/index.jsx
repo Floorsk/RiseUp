@@ -6,7 +6,7 @@ export const LoginPorto = () => {
     return(
         <div className="login-container">
             <div className="login">
-                <div className="title">
+                <div className="login-title">
                     <h1>Painel de controle</h1>
                 </div>
                 <div className="login-info">
@@ -41,13 +41,13 @@ export const LoginPorto = () => {
                     <Button 
                         variant={"contained"}
                         sx={{
-                            width: '290px',
+                            width: '235px',
                             height: '50px',
                             borderRadius: '5px',
                             fontFamily: 'Space Grotesk',
                             fontSize: '16px',
                             weight: '700',
-                            backgroundColor: '#000000'
+                            backgroundColor: '#000000',
                         }}
                         href=".././Dashboard"
                     >
