@@ -6,6 +6,7 @@ import {
     FaRegBuilding,
     FaSignOutAlt,
 } from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 export const LateralNav = () => {
     return(
@@ -21,7 +22,7 @@ export const LateralNav = () => {
                                 <div className="icon">
                                     <FaHome size={30}/>
                                 </div>
-                                <a href="">Painel Inicial</a>
+                                <Link to="/MainPage">Painel Inicial</Link>
                             </div>
                         </li>
                         <li>
@@ -29,7 +30,7 @@ export const LateralNav = () => {
                                 <div className="icon">
                                     <FaUserFriends size={30}/>
                                 </div>
-                                <a href="">Squads</a>
+                                <Link to="/Squads">Squads</Link>
                             </div>
                         </li>
                         <li>
@@ -37,7 +38,7 @@ export const LateralNav = () => {
                                 <div className="icon">
                                     <FaUniversity size={30}/>
                                 </div>
-                                <a href="">Instituições</a>
+                                <Link to="/Uni">Instituições</Link>
                             </div>
                         </li>
                         <li>
@@ -45,7 +46,7 @@ export const LateralNav = () => {
                                 <div className="icon">
                                     <FaRegBuilding size={30}/>
                                 </div>
-                                <a href="">Empresas</a>
+                                <Link to="/Company">Empresas</Link>
                             </div>
                         </li>
                     </ul>
@@ -55,7 +56,7 @@ export const LateralNav = () => {
                         <div className="icon">
                             <FaSignOutAlt size={30}/>
                         </div>
-                        <a href="">Sair</a>
+                        <Link to="/LoginPorto">Sair</Link>
                     </div>
                 </div>
             </div>

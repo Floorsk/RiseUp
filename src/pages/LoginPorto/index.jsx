@@ -1,6 +1,7 @@
 import './styles.css'
 import { Button, TextField } from '@mui/material'
 import { AiOutlineUser, AiOutlineLock } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 export const LoginPorto = () => {
     return(
@@ -51,7 +52,7 @@ export const LoginPorto = () => {
                         }}
                         href=".././Dashboard"
                     >
-                        Entrar
+                        <Link to="/Dashboard">Entrar</Link>
                     </Button>
                 </div>
             </div>

@@ -1,0 +1,8 @@
+.company-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.company-content {
+    width: 1504px;
+}
