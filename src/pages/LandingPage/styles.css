@@ -1,18 +1,21 @@
+/* #fdae50 rgb(253, 174, 80)  e #319ac0(49, 154, 192) */
+/* (padding-top, padding-right, padding-bottom, padding-left). */
+img{
+    size: cover;
+}
 .home-container {
     height: 100%;
     width: 100%;
     padding-top: 4rem;
 }
-.presentation {
-    padding-right: 8%;
-    padding-left: 8%;
-}
+
 .info-section {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    width: 84%;
-    padding-right: 8%;
-    padding-left: 8%;
+    width: 70%;
+    padding-right: 15%;
+    padding-left: 15%;
     padding-bottom: 5%;
 }
 .info-area {
@@ -22,13 +25,14 @@
     margin-bottom: 20px;
 }
 .info-text h1 {
-    font-size: 70px;
+    font-size: 60px;
+    line-height: normal;
     font-family: 'Space Grotesk';
     padding-bottom: 20px;
 }
 .info-text p {
     font-family: 'Inter', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 300;
 }
 .info-button{
@@ -43,7 +47,7 @@
     width: 400px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 20px;
 }
 .info-images {
@@ -58,12 +62,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 84%;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-right: 8%;
-    padding-left: 8%;
-    background-color: #F8F8F8;
+    width: 70%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 15%;
+    padding-left: 15%;
+    background-color: rgba(49, 154, 192, 0.2);
+    /* background-color: #F8F8F8; */
 }
     .numbers-text, .numbers-stud, .numbers-comp, .numbers-uni{
         display:flex ;
@@ -90,7 +95,7 @@
 }
 .advS, .advC {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 84%;
     padding-right: 8%;
     padding-left: 8%;
@@ -116,4 +121,111 @@
     letter-spacing: -0.03em;
     text-align: left;
 
+}
+/* details */
+.det {
+    display: flex;
+    justify-content:space-between;
+    padding: 3% 16% 3% 16%;
+    width: 68%;
+}
+    .det h4{
+        margin-top: 2%; 
+        margin-bottom: 2% ;
+    }
+    .det-img {
+        width: 33%;
+        align-self: flex-end;
+    }
+
+    .det-content {
+        width: 65%;
+        display: inline
+    }
+        .above, .below{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 3%;
+        }
+            .object1 img, .object2 img, .object3 img, .object4 img{
+                width: 40px;
+                height: 40px;
+                padding: 4px;
+                background-color: #FCA749;
+                border-radius: 20.12%;
+            }
+        .object1, .object2, .object3, .object4{
+            width: 48%;
+            padding-right: 3%;
+        }
+
+/* review */
+.review {
+    justify-content: center;
+    width: 70%;
+    padding-top: 5%;
+    padding-right: 15%;
+    padding-bottom: 10%;
+    padding-left: 15%;
+}
+    .review-head {
+        width: 100%;
+        text-align: center;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: space-around;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        align-items: center;
+    }
+    .card{
+        width: 20%;
+        height: 30vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2% 2% 2% 2%;
+        margin: 2% 2% 2% 2%;
+        background-color: rgba(49, 154, 192, 0.2);
+        border-radius: 5%;
+        box-shadow: 6px 6px 10px rgba(rgba(0, 0, 0, 0.171));
+        max-height: 200px;
+        margin-left: 30px;
+    }
+        .icon {
+            justify-self: last baseline;
+        }
+        .card p{
+            width: 100%;
+            text-align: auto;
+        }
+
+/* ask */
+.ask {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background:#1E1F24;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 3.5%;
+    padding-bottom: 1.5%;
+    margin-top: auto;
+    color: #f2f2f5;
+}
+.contato, .icones{
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }

@@ -1,11 +1,22 @@
 import './styles.css'
 import { Button } from '@mui/material'
-import { AiOutlineUser } from "react-icons/ai";
-import { FiBriefcase } from "react-icons/fi";
-import { FiAward } from "react-icons/fi";
-import info from '../../images/Group150.jfif'
-import students from '../../images/Group-148.jfif'
-import companies from '../../images/Group-147.jfif'
+
+// icons import
+import { AiOutlineUser, AiOutlineFundProjectionScreen, AiOutlineApartment, AiOutlineCalendar } from "react-icons/ai";
+import { BsCalendarWeek} from "react-icons/bs";
+import { FaRegHandshake} from "react-icons/fa";
+import { FiBriefcase, FiAward } from "react-icons/fi";
+import { TwitterSquareFilled, FacebookFilled, LinkedinFilled } from "@ant-design/icons";
+
+
+// images import
+import info from './imgs/jpg/welcome.jpg'
+import students from './imgs/jpg/student.jpg'
+import companies from './imgs/jpg/company.jpg'
+import details from './imgs/jpg/details.jpg'
+import rogerio from './imgs/jpg/rogerio.jpg'
+import marco from './imgs/jpg/marco.jpg'
+import flavia from './imgs/jpg/flavia.jpg'
 
 export const LandingPage = () => {
     return (
@@ -34,7 +45,7 @@ export const LandingPage = () => {
                                         fontFamily: 'Space Grotesk',
                                         fontSize: '14px',
                                         weight: '700',
-                                        backgroundColor: '#000000'
+                                        backgroundColor: '#fdae50'
                                     }}
                                     href="/RegisterStudent"
                                 >
@@ -49,7 +60,7 @@ export const LandingPage = () => {
                                         fontFamily: 'Space Grotesk',
                                         fontSize: '14px',
                                         weight: '700',
-                                        backgroundColor: '#000000'
+                                        backgroundColor: '#fdae50'
                                     }}
                                     href="/RegisterCompany"
                                 >
@@ -102,7 +113,7 @@ export const LandingPage = () => {
 
                 </div>
             </div>
-
+<hr />
             <div className="advantage">
                 <div className="advS">
                     <div className="advS-img"><img src={ students } /></div>
@@ -120,23 +131,119 @@ export const LandingPage = () => {
                     <div className="advS-img"><img src={ companies } /></div>
                 </div>
             </div>
+<hr />
+            <div className="det">
+                {/* details */}
+                <div className="det-img"><img src={ details } /></div>
+                
+                <div className="det-content">
+                    <div className="heading"><h3>Como funciona nossa residência de Software?</h3></div>
 
-            {/* <div class="div-advantage">
-                <div class="advantage-s">
-                    <img src="" alt="">
-                    <div class="texto">
-                        <h3></h3>
-                        <p></p>
+                    <div className="above">
+                        <div className="object1">
+                            < AiOutlineFundProjectionScreen />
+                            <h4>Aprendizado Direto</h4>
+                            <p>Os alunos têm seu primeiro<br/>contato com as empresas<br/>ligadas ao
+                            Porto Digital ainda no<br/>seu primeiro ano de faculdade.</p>
+                        </div>
+
+                        <div className="object3">
+                            < FaRegHandshake />
+                            <h4>Parceria Porto Digital</h4>
+                            <p>Entrando nesse programa, a<br/> empresa vira uma parceira do<br/> Porto Digital e etc.</p>  
+                        </div>
+                    </div>
+
+                    <div className="below">
+                        <div className="object2">
+                            < BsCalendarWeek />
+                            <h4>Horário flexível</h4>
+                            <p>Você e sua empresa escolhem os<br/>melhores horários para a mentoria <br/>com os estudantes.</p>
+                        </div>
+
+                        <div className="object4">
+                            < AiOutlineApartment />
+                            <h4>Construção de Network</h4>
+                            <p>Através da residência de Software,<br />estudantes e empresas trocam<br/>experiências e constroem novas.</p> 
+                        </div>
                     </div>
                 </div>
-                <div class="advantage-c">
-                    <img src="" alt="">
-                    <div class="texto">
-                        <h3></h3>
-                        <p></p>
+            </div>
+<hr />
+            <div className="review">
+                <div className="review-head"><h2>A Residência Onboard e as empresas</h2></div>
+                <div className="cards">
+                    <div className="card">
+                        <div><p> "Essa parceria universidade,ecossistema de inovação e empresas é o que vai trazer sustentabilidade para nosso ecossistema a longo prazo."</p></div>
+                        <div class="icon"> <h3>Rogério Moreira</h3> <img src={ rogerio } /> </div>
+                    </div>
+
+                    <div className="card">
+                        <p>Oportunidade única de descobrir novos talentos, formar novos talentos. É bom para nós e bom para os alunos.</p>
+                        <div class="icon"> <h3>Marco Carnut</h3> <img src={ marco } /> </div>
+                    </div>
+
+                    <div className="card">
+                        <p>Na residência Onboard, os jovens são moldados para o sucesso na área de tecnologia, e isso para as empresas é muito importante.</p>
+                        <div class="icon"> <h3>Flávia Brito</h3> <img src={ flavia } /> </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
+<hr />
+            <div className="ask">
+                <h2>Dúvidas?</h2>
+                <h3>Entre em contato</h3>
+            </div>
+<hr />
+            <footer>
+                <div className="sobre">
+                    <ul>
+                        <h3>Sobre nós</h3>
+                        <p>Home</p>
+                        <p>Coordenator</p>
+                        <p>Us</p>
+                        <p>About</p>
+                        <p>Contact</p>
+                    </ul>
+                </div>
+
+                <div className="suporte">
+                    <ul>
+                        <h3>Suporte</h3>
+                        <p>Eleanor Edwards</p>
+                        <p>Ted Robertson</p>
+                        <p>Annette Russell</p>
+                        <p>Jennie Mckinney</p>
+                        <p>Gloria Richards</p>
+                    </ul>
+                </div>
+
+                <div className="Porto">
+                    <ul>
+                        <h3>Porto Digital</h3>
+                        <p>Philip Jones</p>
+                        <p>Product</p>
+                        <p>Colleen Russell</p>
+                        <p>Marvin Hawkins</p>
+                        <p>Bruce Simmmons</p>
+                    </ul>
+                </div>
+
+                <div className="contatos">
+                    <div className="endereco">
+                        <ul>
+                            <p>R.do Apolo, 235 - Recife, PE, 50030-220</p>
+                            <p>(81)00000-0000</p>
+                        </ul>
+                    </div>
+                    <div className="icones">
+                        <a href="https://twitter.com/porto_digital?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"  target="_blank"> <TwitterSquareFilled /> </a>
+                        <a href="https://pt-br.facebook.com/portodigital/"  target="_blank"> <FacebookFilled /> </a>
+                        <a href="https://br.linkedin.com/company/portodigital"  target="_blank"> <LinkedinFilled /> </a>
+                    </div>
+                </div>
+            </footer>
+
         </div>
     )
 }
