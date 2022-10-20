@@ -1,0 +1,8 @@
+.main-page-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.main-content {
+    width: 1504px;
+}

@@ -1,0 +1,8 @@
+.squads-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.squads-content {
+    width: 1504px;
+}

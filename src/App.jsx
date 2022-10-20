@@ -2,8 +2,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
-  link
+  Routes
 } from 'react-router-dom';
 import { RegisterStudent } from './pages/RegisterStudent';
 import { StudentForms } from './pages/StudentForms';
@@ -12,6 +11,10 @@ import { LandingPage } from './pages/LandingPage';
 import { LoginPorto } from './pages/LoginPorto';
 import { Dashboard } from './pages/Dashboard';
 import { RegisterCompany } from './pages/RegisterCompany';
+import { MainPage } from './components/ControlPage/MainPage';
+import { Squads } from './components/ControlPage/Squads';
+import { Uni } from './components/ControlPage/Uni';
+import { Company } from './components/ControlPage/Company';
 
 function App() {
   return (
@@ -26,6 +29,10 @@ function App() {
           <Route path="/LoginPorto" element={<LoginPorto/>}/>
           <Route path="/Dashboard" element={<Dashboard/>}/>
           <Route path="/RegisterCompany" element={<RegisterCompany/>}/>
+          <Route path="/MainPage" element={<MainPage/>}/>
+          <Route path="/Squads" element={<Squads/>}/>
+          <Route path="/Uni" element={<Uni/>}/>
+          <Route path="/Company" element={<Company/>}/>
         </Routes>
       </div>
     </Router>
