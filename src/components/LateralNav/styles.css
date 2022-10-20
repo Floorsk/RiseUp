@@ -28,7 +28,7 @@
     height: 40%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 .nav ul {
     width: 70%;
@@ -42,6 +42,12 @@
     color: #F5F5F5;
     display: flex;
 }
+.nav-direction {
+    width: 20%;
+    height: 100%;
+    align-self: left;
+    
+}
 .lateral-button-area {
     display: flex;
     align-items: center;
@@ -53,7 +59,7 @@ a {
     font-size: 22px;
     font-weight: 600;
     color: #F5F5F5;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 .exit-area {
     height: 20%;
@@ -62,9 +68,11 @@ a {
     justify-content: center;
 }
 .exit {
-    width: 70%;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: #F5F5F5;
+    margin-right: 100px;
 }

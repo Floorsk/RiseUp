@@ -16,6 +16,7 @@ export const LateralNav = () => {
                     <div className="small-orange-ball" />
                 </div>
                 <div className="nav">
+                    <div className="nav-direction"/>
                     <ul>
                         <li>
                             <div className="lateral-button-area">

@@ -34,7 +34,7 @@
     margin-left: 250px;
   }
   
-  .register {
+  .register-company {
     display: flex;
     position: relative;
     width: 73%;
@@ -92,14 +92,14 @@
     border-radius: 10px;
   }
   
-  .input-group {
+  .input-group-company {
     display: flex;
     flex-direction: column;
     margin-bottom: 0rem;
     margin: 72px 0px 72px 0px;
   }
   
-  .input-box {
+  .input-box-company {
     display: flex;
     justify-content: space-between;
     width: 750px;
@@ -122,7 +122,7 @@
     margin-top: 40px;
   }
   
-  #shift-group-label {
+  #shift-group-company-label {
     font-size: 25px;
     font-weight: 600;
     color: #000000;
@@ -190,7 +190,7 @@
       margin-left: 22%;
     }
   
-    .register {
+    .register-company {
       width: 100%;
     }
   }
@@ -208,7 +208,7 @@
       margin-left: 0%;
     }
   
-    .register {
+    .register-company {
       width: 100%;
     }
   }
@@ -219,7 +219,7 @@
       margin-left: 0px;
     }
   
-    .register {
+    .register-company {
       width: 100%;
     }
   
@@ -229,7 +229,7 @@
       justify-content: center;
     }
   
-    .input-box {
+    .input-box-company {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -255,7 +255,7 @@
       margin-left: 0px;
     }
   
-    .register {
+    .register-company {
       width: 100%;
       margin: 1.5rem;
     }
@@ -268,7 +268,7 @@
       margin-left: -31px;
     }
 
-    .input-box {
+    .input-box-company {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -278,7 +278,7 @@
       margin-bottom: 15px;
     }
   
-    .input-box :last-child {
+    .input-box-company :last-child {
       width: 298px;
     }
     .button-advance {

@@ -79,7 +79,7 @@ img{
         font-weight: bold;
         color: #FCA749;
     }
-    .icon-i, .icon-ii, .icon-iii{
+    .icon-i{
         color: #FCA749;
         padding-left: 2px;
         border: 4px;
@@ -142,22 +142,39 @@ img{
         width: 65%;
         display: inline
     }
+        .heading h3 {
+            font-size: 26px;
+            font-weight: 600;
+        }
         .above, .below{
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding-top: 3%;
         }
-            .object1 img, .object2 img, .object3 img, .object4 img{
+            /* .object1 img, .object2 img, .object3 img, .object4 img{
                 width: 40px;
                 height: 40px;
                 padding: 4px;
                 background-color: #FCA749;
                 border-radius: 20.12%;
-            }
+            } */
         .object1, .object2, .object3, .object4{
             width: 48%;
             padding-right: 3%;
+        }
+        .object3 {
+            margin-bottom: 18px;
+        }
+        .icon-ii {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background-color: #FCA749;
+            color: #F5F5F5;
         }
 
 /* review */
@@ -173,13 +190,18 @@ img{
         width: 100%;
         text-align: center;
     }
+    .review-head h2 {
+        font-size: 26px;
+        font-weight: 600;
+    }
     .cards{
         display: flex;
         flex-wrap: wrap;  
         justify-content: space-around;
         width: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
+        /* Esse padding left e right estava desalinhando o 'review-head' */
+        /* padding-left: 5%;
+        padding-right: 5%; */
         align-items: center;
     }
     .card{
@@ -225,7 +247,7 @@ footer{
 }
 .contato, .icones{
     display: flex;
-    display: flex;
     flex-direction: row;
     width: 100%;
 }
+

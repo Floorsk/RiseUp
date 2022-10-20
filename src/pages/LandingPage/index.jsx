@@ -93,7 +93,7 @@ export const LandingPage = () => {
 
                     <div className="numbers-comp">
                         {/* c: companies */}
-                        <div className="icon-ii">< FiBriefcase size={40}/></div>
+                        <div className="icon-i">< FiBriefcase size={40}/></div>
 
                         <div className="text">
                             <h2>+60</h2>
@@ -103,7 +103,7 @@ export const LandingPage = () => {
                     
                     <div className="numbers-uni">
                         {/* u: universities */}
-                        <div className="icon-iii">< FiAward size={40}/></div>
+                        <div className="icon-i">< FiAward size={40}/></div>
 
                         <div className="text">
                             <h2>+12</h2>
@@ -141,28 +141,28 @@ export const LandingPage = () => {
 
                     <div className="above">
                         <div className="object1">
-                            < AiOutlineFundProjectionScreen />
+                            <div className="icon-ii">< AiOutlineFundProjectionScreen size={35}/></div>
                             <h4>Aprendizado Direto</h4>
                             <p>Os alunos têm seu primeiro<br/>contato com as empresas<br/>ligadas ao
                             Porto Digital ainda no<br/>seu primeiro ano de faculdade.</p>
                         </div>
 
                         <div className="object3">
-                            < FaRegHandshake />
+                            <div className="icon-ii">< FaRegHandshake size={40}/></div>
                             <h4>Parceria Porto Digital</h4>
-                            <p>Entrando nesse programa, a<br/> empresa vira uma parceira do<br/> Porto Digital e etc.</p>  
+                            <p>Entrando nesse programa, a<br/> empresa vira uma parceira do<br/> Porto Digital e etc<br/></p>  
                         </div>
                     </div>
 
                     <div className="below">
                         <div className="object2">
-                            < BsCalendarWeek />
+                            <div className="icon-ii">< BsCalendarWeek size={30}/></div>
                             <h4>Horário flexível</h4>
                             <p>Você e sua empresa escolhem os<br/>melhores horários para a mentoria <br/>com os estudantes.</p>
                         </div>
 
                         <div className="object4">
-                            < AiOutlineApartment />
+                            <div className="icon-ii">< AiOutlineApartment size={30}/></div>
                             <h4>Construção de Network</h4>
                             <p>Através da residência de Software,<br />estudantes e empresas trocam<br/>experiências e constroem novas.</p> 
                         </div>
@@ -179,12 +179,12 @@ export const LandingPage = () => {
                     </div>
 
                     <div className="card">
-                        <p>Oportunidade única de descobrir novos talentos, formar novos talentos. É bom para nós e bom para os alunos.</p>
+                        <p>"Oportunidade única de descobrir novos talentos, formar novos talentos. É bom para nós e bom para os alunos."</p>
                         <div class="icon"> <h3>Marco Carnut</h3> <img src={ marco } /> </div>
                     </div>
 
                     <div className="card">
-                        <p>Na residência Onboard, os jovens são moldados para o sucesso na área de tecnologia, e isso para as empresas é muito importante.</p>
+                        <p>"Na residência Onboard, os jovens são moldados para o sucesso na área de tecnologia, e isso para as empresas é muito importante."</p>
                         <div class="icon"> <h3>Flávia Brito</h3> <img src={ flavia } /> </div>
                     </div>
                 </div>
@@ -237,7 +237,7 @@ export const LandingPage = () => {
                         </ul>
                     </div>
                     <div className="icones">
-                        <a href="https://twitter.com/porto_digital?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"  target="_blank"> <TwitterSquareFilled /> </a>
+                        <a href="https://twitter.com/porto_digital?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"  target="_blank"> <TwitterSquareFilled size={40}/> </a>
                         <a href="https://pt-br.facebook.com/portodigital/"  target="_blank"> <FacebookFilled /> </a>
                         <a href="https://br.linkedin.com/company/portodigital"  target="_blank"> <LinkedinFilled /> </a>
                     </div>

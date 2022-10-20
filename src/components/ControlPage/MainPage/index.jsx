@@ -4,7 +4,7 @@ import './styles.css';
 export const MainPage = () => {
     return(
         <div className="main-page-container">
-            <LateralNav/>
+            <LateralNav />
             <div className="main-content">
                 <h1>Main</h1>
                 <p>

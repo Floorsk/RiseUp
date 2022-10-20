@@ -46,9 +46,7 @@ export const RegisterStudent = () => {
                 <form action="#" id="register-form">
                     <div className="register-header">
                         <div className="back-button">
-                            <div className="back-arrow">
-                                <AiOutlineLeft/>
-                            </div>
+                            <AiOutlineLeft/>
                             <a href="/">Voltar</a>
                         </div>
                         <div className="title">

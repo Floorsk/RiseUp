@@ -21,9 +21,7 @@ export const StudentSkills = () => {
                 <form action="#" id='skills-form'>
                     <div className="register-header">
                         <div className="back-button">
-                            <div className="back-arrow">
-                                <AiOutlineLeft/>
-                            </div>
+                            <AiOutlineLeft/>
                             <a href="StudentForms">Voltar</a>
                         </div>
                         <div className="title">

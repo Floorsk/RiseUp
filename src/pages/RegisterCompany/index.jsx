@@ -33,23 +33,21 @@ export const RegisterCompany = (props) => {
                 <SideBlue />
             </div>
 
-            <div className="register">
+            <div className="register-company">
                 <form action="#" id="register-form-company">
                     <div className="register-header">
                         <div className="back-button">
-                            <div className="back-arrow">
-                                <AiOutlineLeft />
-                            </div>
-                            <a href="LandingPage">Voltar</a>
+                            <AiOutlineLeft />
+                            <a href="/">Voltar</a>
                         </div>
                         <div className="title">
                             <h1>Cadastro</h1>
                             <h2>Informações da empresa</h2>
                         </div>
                     </div>
-                    <div className="input-group">
+                    <div className="input-group-company">
 
-                        <div className="input-box">
+                        <div className="input-box-company">
                             <TextField
                                 label="Nome da empresa  "
                                 sx={{ width: '358px', color: '#2B2C33' }}
@@ -57,14 +55,14 @@ export const RegisterCompany = (props) => {
 
                         </div>
 
-                        <div className="input-box">
+                        <div className="input-box-company">
                             <TextField
                                 label="Nome do representante  "
                                 sx={{ width: '358px', color: '#2B2C33' }}
                             />
                         </div>
 
-                        <div className="input-box">
+                        <div className="input-box-company">
                             <TextField
                                 label="E-mail do representante"
                                 sx={{ width: '358px', color: '#2B2C33' }}
@@ -75,7 +73,7 @@ export const RegisterCompany = (props) => {
                             />
                         </div>
 
-                        <div className="input-box">
+                        <div className="input-box-company">
                             <TextField
                                 type="number"
                                 label="Telefone do representante"
@@ -198,7 +196,7 @@ export const RegisterCompany = (props) => {
                                     weight: '700',
                                     backgroundColor: '#000000'
                                 }}
-                                href=".././StudentForms"
+                                href="/"
                             >
                                 Enviar
                             </Button>
