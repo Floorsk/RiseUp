@@ -139,7 +139,7 @@
 @media screen and (max-width: 999px) {
     .side-blue {
         display: none;
-        margin-left: 0px;
+        margin-left: 0%;
     }
     .register {
         width: 100%;
@@ -148,6 +148,7 @@
         width: 100%;
         align-items: center;
         justify-content: center;
+        margin-left: 0%;
     }
     .input-box {
         display: flex;

@@ -67,6 +67,9 @@ export const RegisterCompany = (props) => {
                                 label="E-mail do representante"
                                 sx={{ width: '358px', color: '#2B2C33' }}
                             />
+                        </div>
+
+                        <div className="input-box-company">
                             <TextField
                                 label="Repita o E-mail"
                                 sx={{ width: '358px', color: '#2B2C33' }}
@@ -97,7 +100,7 @@ export const RegisterCompany = (props) => {
                                 maxWidth: '100%',
                             }}
                         >
-                            <TextField fullWidth label="" id="box-space" />
+                            <TextField fullWidth label="" id="box-space"/>
                         </Box>
 
                         <h3>Faça uma breve descrição da solução esperada. Como ela deve

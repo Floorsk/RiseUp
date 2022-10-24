@@ -103,21 +103,9 @@
     display: flex;
     justify-content: space-between;
     width: 750px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
-  
-  .select-box {
-    display: flex;
-    width: 750px;
-    justify-content: space-between;
-  }
-  
-  .institution-info {
-    display: flex;
-    width: 53%;
-    justify-content: space-between;
-  }
-  
+     
   .shift {
     margin-top: 40px;
   }
@@ -183,7 +171,7 @@
       margin-left: 0px;
     }
   
-    #register-form {
+    #register-form-company {
       width: 100%;
       align-items: center;
       justify-content: center;
@@ -235,15 +223,9 @@
       justify-content: space-between;
       word-wrap: break-word;
       width: 300px;
-      height: 130px;
-      margin-bottom: 15px;
+      height: 55px;
     }
   
-    .select-box {
-      display: flex;
-      width: 300px;
-      justify-content: space-between;
-    }  
     .button-advance {
       width: 300px;
     }
@@ -274,8 +256,7 @@
       justify-content: space-between;
       word-wrap: break-word;
       width: 300px;
-      height: 130px;
-      margin-bottom: 15px;
+      height: 55px;
     }
   
     .input-box-company :last-child {

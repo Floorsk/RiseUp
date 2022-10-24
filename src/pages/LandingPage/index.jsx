@@ -113,7 +113,7 @@ export const LandingPage = () => {
 
                 </div>
             </div>
-<hr />
+
             <div className="advantage">
                 <div className="advS">
                     <div className="advS-img"><img src={ students } /></div>
@@ -131,7 +131,7 @@ export const LandingPage = () => {
                     <div className="advS-img"><img src={ companies } /></div>
                 </div>
             </div>
-<hr />
+
             <div className="det">
                 {/* details */}
                 <div className="det-img"><img src={ details } /></div>
@@ -169,7 +169,7 @@ export const LandingPage = () => {
                     </div>
                 </div>
             </div>
-<hr />
+
             <div className="review">
                 <div className="review-head"><h2>A Residência Onboard e as empresas</h2></div>
                 <div className="cards">
@@ -189,12 +189,12 @@ export const LandingPage = () => {
                     </div>
                 </div>
             </div>
-<hr />
+
             <div className="ask">
                 <h2>Dúvidas?</h2>
                 <h3>Entre em contato</h3>
             </div>
-<hr />
+
             <footer>
                 <div className="sobre">
                     <ul>
