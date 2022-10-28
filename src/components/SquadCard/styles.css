@@ -1,0 +1,29 @@
+.squad-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 269px;
+    height: 188px;
+    /* background-color: red; */
+    margin: 2rem;
+    box-shadow: 0px 1px 3px;
+    border-radius: 10px;
+}
+.squad-card h3 {
+    color: #76DAF1;
+    font-size: 22px;
+    font-weight: 700;
+}
+.squad-name, .inst-name {
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 1px;
+}
+.hour {
+    color: #FDAE50;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 1px;
+}

@@ -34,13 +34,14 @@
     width: 70%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    
     flex-direction: column;
     text-decoration: none;
 }
 .nav li {
     color: #F5F5F5;
     display: flex;
+    margin-bottom: 50px;
 }
 .nav-direction {
     width: 20%;

@@ -29,25 +29,9 @@ export const LateralNav = () => {
                         <li>
                             <div className="lateral-button-area">
                                 <div className="icon">
-                                    <FaUserFriends size={30}/>
-                                </div>
-                                <Link to="/Squads">Squads</Link>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="lateral-button-area">
-                                <div className="icon">
                                     <FaUniversity size={30}/>
                                 </div>
                                 <Link to="/Uni">Instituições</Link>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="lateral-button-area">
-                                <div className="icon">
-                                    <FaRegBuilding size={30}/>
-                                </div>
-                                <Link to="/Company">Empresas</Link>
                             </div>
                         </li>
                     </ul>
