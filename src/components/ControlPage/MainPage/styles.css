@@ -5,7 +5,7 @@
 }
 .main-content {
     /* width: 1504px; */
-    width: 90%;
+    width: 80%;
     display: flex;
     align-items: center;
     flex-direction: column;

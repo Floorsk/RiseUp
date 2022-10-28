@@ -1,3 +1,4 @@
+import { ReactDOM } from 'react';
 import { LateralNav } from '../../LateralNav';
 import { SquadCard } from '../../SquadCard'
 import './styles.css';
@@ -6,6 +7,7 @@ import {
     InputLabel,
     Select,
     MenuItem,
+    Button
 } from '@mui/material';
 import { useState } from 'react';
 
@@ -22,6 +24,11 @@ export const MainPage = () => {
     const handleChangeResidence = (event) => {
         setDay(event.target.value)
     }
+
+    const addCard = () => {
+        console.log("addign elemt")
+        
+    }    
 
     return(
         <div className="main-page-container">
@@ -68,9 +75,27 @@ export const MainPage = () => {
                         </FormControl>
                     </div>
 
+                    <div className="squad-generator">
+                        <Button
+                            variant={"contained"}
+                            sx={{
+                                width: '210px',
+                                height: '50px',
+                                borderRadius: '10px',
+                                fontFamily: 'Space Grotesk',
+                                fontSize: '16px',
+                                weight: '700',
+                                backgroundColor: '#000000'
+                            }}
+                            onClick={() => {addCard()}}
+                        >
+                            Gerar Squad
+                        </Button>
+                    </div>
+
                 </div>
 
-                <div className="squads">
+                <div className="squads" id='squads'>
                     <SquadCard
                         company="Disney Inc"
                         squad={1}
@@ -143,7 +168,9 @@ export const MainPage = () => {
                         inst="Unicap"
                         hour={1700}
                     />
+                    <ul>
 
+                    </ul>
                 </div>
 
             </div>
