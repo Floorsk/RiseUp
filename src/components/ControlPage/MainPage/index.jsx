@@ -1,4 +1,3 @@
-import { ReactDOM } from 'react';
 import { LateralNav } from '../../LateralNav';
 import { SquadCard } from '../../SquadCard'
 import './styles.css';
@@ -9,7 +8,7 @@ import {
     MenuItem,
     Button
 } from '@mui/material';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const MainPage = () => {
 
@@ -25,10 +24,13 @@ export const MainPage = () => {
         setDay(event.target.value)
     }
 
+    const [cards, setCards] = useState([]);
+
+    const cardSquad = <SquadCard id="squad-card"/>
+
     const addCard = () => {
-        console.log("addign elemt")
-        
-    }    
+        setCards([...cards, cardSquad])
+    }
 
     return(
         <div className="main-page-container">
@@ -96,81 +98,10 @@ export const MainPage = () => {
                 </div>
 
                 <div className="squads" id='squads'>
-                    <SquadCard
-                        company="Disney Inc"
-                        squad={1}
-                        inst="UNIT"
-                        hour={1900}
-                    />
-                    <SquadCard
-                        company="Microsoft"
-                        squad={2}
-                        inst="Unicap"
-                        hour={1700}
-                    />
-                    <SquadCard
-                        company="Microsoft"
-                        squad={2}
-                        inst="Unicap"
-                        hour={1700}
-                    />
-                    <SquadCard
-                        company="Microsoft"
-                        squad={2}
-                        inst="Unicap"
-                        hour={1700}
-                    />
-                    <SquadCard
-                        company="Microsoft"
-                        squad={2}
-                        inst="Unicap"
-                        hour={1700}
-                    />
-                    <SquadCard
-                        company="Microsoft"
-                        squad={2}
-                        inst="Unicap"
-                        hour={1700}
-                    />
-                    <SquadCard
-                        company="Microsoft"
-                        squad={2}
-                        inst="Unicap"
-                        hour={1700}
-                    />
-                    <SquadCard
-                        company="Microsoft"
-                        squad={2}
-                        inst="Unicap"
-                        hour={1700}
-                    />
-                    <SquadCard
-                        company="Microsoft"
-                        squad={2}
-                        inst="Unicap"
-                        hour={1700}
-                    />
-                    <SquadCard
-                        company="Microsoft"
-                        squad={2}
-                        inst="Unicap"
-                        hour={1700}
-                    />
-                    <SquadCard
-                        company="Microsoft"
-                        squad={2}
-                        inst="Unicap"
-                        hour={1700}
-                    />
-                    <SquadCard
-                        company="Microsoft"
-                        squad={2}
-                        inst="Unicap"
-                        hour={1700}
-                    />
                     <ul>
-
+                        {cards.map(item => <li>{item}</li>)}
                     </ul>
+                    
                 </div>
 
             </div>

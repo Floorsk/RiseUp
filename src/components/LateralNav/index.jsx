@@ -23,7 +23,7 @@ export const LateralNav = () => {
                                 <div className="icon">
                                     <FaHome size={30}/>
                                 </div>
-                                <Link to="/MainPage">Painel Inicial</Link>
+                                <Link to="/MainPage" id='link'>Painel Inicial</Link>
                             </div>
                         </li>
                         <li>
@@ -31,7 +31,7 @@ export const LateralNav = () => {
                                 <div className="icon">
                                     <FaUniversity size={30}/>
                                 </div>
-                                <Link to="/Uni">Instituições</Link>
+                                <Link to="/Uni" id='link'>Instituições</Link>
                             </div>
                         </li>
                     </ul>
@@ -41,7 +41,7 @@ export const LateralNav = () => {
                         <div className="icon">
                             <FaSignOutAlt size={30}/>
                         </div>
-                        <Link to="/LoginPorto">Sair</Link>
+                        <Link to="/LoginPorto" id='link'>Sair</Link>
                     </div>
                 </div>
             </div>

@@ -34,7 +34,6 @@
     width: 70%;
     height: 100%;
     display: flex;
-    
     flex-direction: column;
     text-decoration: none;
 }
@@ -76,4 +75,32 @@ a {
     text-decoration: none;
     color: #F5F5F5;
     margin-right: 100px;
+}
+@media screen and (max-width: 1100px) {
+    .lateral-container {
+        width: 200px;
+    }
+    .small-orange-ball {
+        width: 100px;
+        height: 100px;
+    }
+    .nav ul {
+        align-items: center;
+        margin-right: 1.7rem;
+    }
+    #link {
+        display: none;
+    }
+    .exit {
+        margin-left: 7rem;
+    }
+}
+@media screen and (max-width: 586px) {
+    .lateral-container {
+        width: 120px;
+    }
+    .small-orange-ball {
+        width: 50px;
+        height: 50px;
+    }
 }
