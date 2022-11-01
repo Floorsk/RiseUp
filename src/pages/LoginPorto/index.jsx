@@ -1,14 +1,19 @@
 import './styles.css'
 import { Button, TextField } from '@mui/material'
 import { AiOutlineUser, AiOutlineLock } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
+/* import { Link } from 'react-router-dom' */
+import { SideBlue } from '../../components/SideBlue';
 
 export const LoginPorto = () => {
     return(
         <div className="login-container">
-            <div className="login">
+            <div className="side-blue">
+                <SideBlue />
+            </div>
+            
+            <div className="login-area">
                 <div className="login-title">
-                    <h1>Painel de controle</h1>
+                    <h1>Login Administrativo</h1>
                 </div>
                 <div className="login-info">
                     <div className="user">
@@ -18,9 +23,9 @@ export const LoginPorto = () => {
                             />
                         </div>
                         <TextField 
-                            label="Usuário"
+                            label="Endereço de e-mail"
                             sx={{
-                                width: '230px'
+                                width: '100vw'
                             }}
                         />
                     </div>
@@ -33,7 +38,7 @@ export const LoginPorto = () => {
                         <TextField 
                             label="Senha"
                             sx={{
-                                width: '230px'
+                                width: '100vw'
                             }}
                         />
                     </div>
@@ -42,17 +47,18 @@ export const LoginPorto = () => {
                     <Button 
                         variant={"contained"}
                         sx={{
-                            width: '235px',
                             height: '50px',
                             borderRadius: '5px',
                             fontFamily: 'Space Grotesk',
-                            fontSize: '16px',
-                            weight: '700',
-                            backgroundColor: '#000000',
+                            fontSize: '13px',
+                            weight: '400',
+                            backgroundColor: '#319AC0',
+                            alignItems: 'center'
                         }}
-                        href=".././Dashboard"
+                        href="/Dashboard"
                     >
-                        <Link to="/Dashboard">Entrar</Link>
+                        {/* <Link to="/Dashboard" className="button-text">Entrar</Link> */}
+                        Entrar
                     </Button>
                 </div>
             </div>
