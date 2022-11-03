@@ -33,7 +33,7 @@ h1{
     flex-direction: column;
     justify-content: center;
 }
-.button-area {
+.login-button-area {
     display: flex;
     width: 100%;
     align-items: center;
@@ -41,6 +41,7 @@ h1{
 }
 .user {
     display: flex;
+    margin-bottom: 10px;
 }
 .password {
     display: flex;

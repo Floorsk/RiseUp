@@ -26,7 +26,7 @@ export const MainPage = () => {
 
     const [cards, setCards] = useState([]);
 
-    const cardSquad = <SquadCard id="squad-card"/>
+    const cardSquad = <SquadCard id="squad-card" />
 
     const addCard = () => {
         setCards([...cards, cardSquad])
@@ -46,6 +46,7 @@ export const MainPage = () => {
                         <FormControl variant="outlined" fullWidth>
                             <InputLabel id="weekday-select-label">Dia da semana</InputLabel>
                             <Select
+                                defaultValue={1}
                                 labelId="weekday-select-label"
                                 id="weekday-select"
                                 value={day}
@@ -65,6 +66,7 @@ export const MainPage = () => {
                         <FormControl variant="outlined" fullWidth>
                             <InputLabel id="residence-select-label">Projeto</InputLabel>
                             <Select
+                                defaultValue={1}
                                 labelId="residence-select-label"
                                 id="residence-select"
                                 value={residence}

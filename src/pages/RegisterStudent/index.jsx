@@ -81,6 +81,7 @@ export const RegisterStudent = () => {
                         <div className="input-box">
                             <TextField
                                 label="Telefone"
+                                placeholder='(00)99999-9999'
                                 type={'number'}
                                 sx={{width: '358px', color: '#2B2C33'}}
                             />

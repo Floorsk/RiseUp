@@ -46,8 +46,7 @@ img{
 .button-area {
     width: 400px;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-top: 20px;
 }
 .info-images {

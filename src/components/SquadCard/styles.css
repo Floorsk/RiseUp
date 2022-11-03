@@ -5,10 +5,10 @@
     flex-direction: column;
     width: 269px;
     height: 188px;
-    /* background-color: red; */
     margin: 2rem;
     box-shadow: 0px 1px 3px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .squad-card h3 {
     color: #76DAF1;
@@ -26,4 +26,114 @@
     font-size: 24px;
     font-weight: 600;
     margin: 1px;
+}
+.modal-container {
+    background-color: rgba(red, green, blue, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-container-area {
+    width: 855px;
+    height: 775px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #F5F5F5;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.modal-container-header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+.modal-container-select-area {
+    width: 80%;
+    height: 100%;
+    margin-top: 40px;
+}
+.error-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.error-message-container {
+    width: 320px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(211,47,47, 0.3);
+    border-radius: 5px;
+}
+.error-area {
+    display: flex;
+}
+.error-message-container p {
+    font-size: 12px;
+    margin-left: 5px;
+}
+.upper-area {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+.left-area, .right-area {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-area {
+    align-items: flex-end;
+}
+.desafio-area {
+    width: 260px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+}
+.desafio-title {
+    margin: 10px;
+}
+.desafio-title h1 {
+    font-size: 14px;
+    font-family: 'Arial';
+    color: rgb(110, 110, 110);
+    font-weight: 200;
+}
+.desafio {
+    margin: 10px;
+}
+.desafio p {
+    text-align: justify;
+    font-size: 12px;
+}
+.bottom-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.modal-container-button-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 139px;
 }

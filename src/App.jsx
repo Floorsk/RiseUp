@@ -12,7 +12,6 @@ import { LoginPorto } from './pages/LoginPorto';
 import { Dashboard } from './pages/Dashboard';
 import { RegisterCompany } from './pages/RegisterCompany';
 import { MainPage } from './components/ControlPage/MainPage';
-
 import { Uni } from './components/ControlPage/Uni';
 
 
@@ -30,7 +29,6 @@ function App() {
           <Route path="/Dashboard" element={<Dashboard/>}/>
           <Route path="/RegisterCompany" element={<RegisterCompany/>}/>
           <Route path="/MainPage" element={<MainPage/>}/>
-
           <Route path="/Uni" element={<Uni/>}/>
 
         </Routes>

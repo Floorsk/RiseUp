@@ -1,5 +1,5 @@
 import './styles.css'
-import { Button, TextField } from '@mui/material'
+import { Button, TextField, Modal } from '@mui/material'
 import { AiOutlineUser, AiOutlineLock } from 'react-icons/ai'
 /* import { Link } from 'react-router-dom' */
 import { SideBlue } from '../../components/SideBlue';
@@ -43,7 +43,7 @@ export const LoginPorto = () => {
                         />
                     </div>
                 </div>
-                <div className="button-area">
+                <div className="login-button-area">
                     <Button 
                         variant={"contained"}
                         sx={{
