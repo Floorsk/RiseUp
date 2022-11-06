@@ -10,4 +10,21 @@
 .dashboard {
     width: 80%;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.control-painel-wellcome {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+.wellcome-message {
+    color: #319AC0;
 }

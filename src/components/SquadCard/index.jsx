@@ -13,11 +13,12 @@ import {
 
 } from '@mui/material';
 import { IoMdAlert } from 'react-icons/io'; 
+import { AiOutlineCloseCircle } from 'react-icons/ai'
 import { StoreMallDirectorySharp } from '@mui/icons-material';
 
 export const SquadCard = () => {
 
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false)
 
@@ -63,6 +64,65 @@ export const SquadCard = () => {
         setDay(event.target.value)
     }
 
+
+    const style = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: 400,
+        bgcolor: 'background.paper',
+        border: '2px solid #000',
+        boxShadow: 24,
+        pt: 2,
+        px: 4,
+        pb: 3,
+    };
+      
+    function ChildModal() {
+        const [open, setOpen] = React.useState(false);
+        const handleOpen = () => {
+        setOpen(true);
+        };
+        const handleClose = () => {
+        setOpen(false);
+        };
+
+        return (
+        <React.Fragment>
+            <Button 
+                variant={"contained"}
+                sx={{
+                    width: '152px',
+                    height: '57px',
+                    color: '#F5F5F5',
+                    backgroundColor: 'black',
+                    borderRadius: '10px',
+                    fontSize: '16px',
+                }}
+                onClick={handleOpen}
+            >
+                Alunos
+            </Button>
+            <Modal
+                hideBackdrop
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="child-modal-title"
+                aria-describedby="child-modal-description"
+            >
+            <Box sx={{ ...style, width: 200 }}>
+                <h2 id="child-modal-title">Text in a child modal</h2>
+                <p id="child-modal-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <Button onClick={handleClose}>Close Child Modal</Button>
+            </Box>
+            </Modal>
+        </React.Fragment>
+        );
+    }
+
     return(
         <div className='squad-card' onClick={() => handleOpen()}>
             <h3>{empresa}</h3>
@@ -77,8 +137,11 @@ export const SquadCard = () => {
                 <div className="modal-container">
                     <div className="modal-container-area">
 
-                        <div className="modal-container-header">
+                        <div className="modal-container-header" >
                             <h1>Edição de informações</h1>
+                            <div className="exit-button" onClick={() => {handleClose()}}>
+                                <AiOutlineCloseCircle />
+                            </div>
                         </div>
                         
                         <div className="modal-container-select-area">
@@ -234,6 +297,7 @@ export const SquadCard = () => {
 
                         <div className="modal-container-button-area">
                             <Button 
+                                variant={"contained"}
                                 sx={{
                                     width: '152px',
                                     height: '57px',
@@ -246,6 +310,8 @@ export const SquadCard = () => {
                             >
                                 Salvar
                             </Button>
+
+                            <ChildModal/>
                         </div>
                     </div>
                 </div>

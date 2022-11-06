@@ -58,6 +58,9 @@
     -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
     box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
 }
+.exit-button {
+    cursor: pointer;
+}
 .modal-container-select-area {
     width: 80%;
     height: 100%;
@@ -132,8 +135,9 @@
     margin-top: 40px;
 }
 .modal-container-button-area {
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 139px;
 }
