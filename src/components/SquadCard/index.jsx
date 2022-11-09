@@ -13,7 +13,8 @@ import {
 
 } from '@mui/material';
 import { IoMdAlert } from 'react-icons/io'; 
-import { AiOutlineCloseCircle } from 'react-icons/ai'
+import { AiOutlineCloseCircle, AiOutlineDelete, AiOutlineInfo } from 'react-icons/ai'
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { StoreMallDirectorySharp } from '@mui/icons-material';
 
 export const SquadCard = () => {
@@ -111,12 +112,101 @@ export const SquadCard = () => {
                 aria-labelledby="child-modal-title"
                 aria-describedby="child-modal-description"
             >
-            <Box sx={{ ...style, width: 200 }}>
-                <h2 id="child-modal-title">Text in a child modal</h2>
-                <p id="child-modal-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                </p>
-                <Button onClick={handleClose}>Close Child Modal</Button>
+            <Box sx={{ ...style, width: 0.60, border: '2px solid lightgrey' }}>
+                <div className="child-modal-title">
+                    <h2>Informação sobre Squad 9</h2>
+                    <hr/>
+                </div>
+                <div className="child-modal-extra">
+                    <div className="child-modal-add"><Button> + adicionar aluno </Button></div>
+                    <div className="child-modal-message"> <InfoOutlinedIcon sx={{ fontSize:"large", p: '1px' , color: '#0288D1' }} /> 7 alunos nesse squad </div>
+                    
+                </div>
+                <div className="table">
+                    <table class="child-modal-table">
+                        <thead>
+                            <tr>
+                                <th>Aluno</th>
+                                <th>Email</th>
+                                <th>Hard Skills</th>
+                                <th>Soft Skills</th>
+                                <th>Remover</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Athos</td>
+                                <td>athos@gmail.com</td>
+                                <td>React</td>
+                                <td>Ambição, Foco</td>
+                                <td>< AiOutlineDelete /></td>
+                            </tr>
+                            <tr>
+                                <td>Davi</td>
+                                <td>davi@gmail.com</td>
+                                <td>React</td>
+                                <td>Confiança, Liderança</td>
+                                <td>< AiOutlineDelete /></td>
+                            </tr>
+                            <tr>
+                                <td>Eliadja</td>
+                                <td>eliadja@gmail.com</td>
+                                <td>React</td>
+                                <td>Adaptabilidade, Criatividade</td>
+                                <td>< AiOutlineDelete /></td>
+                            </tr>
+                            <tr>
+                                <td>Lucas</td>
+                                <td>lucas@gmail.com</td>
+                                <td>React</td>
+                                <td>Ambição, Foco</td>
+                                <td>< AiOutlineDelete /></td>
+                            </tr>
+                            <tr>
+                                <td>Marilia</td>
+                                <td>marilia@gmail.com</td>
+                                <td>React</td>
+                                <td>Confiança, Liderança</td>
+                                <td>< AiOutlineDelete /></td>
+                            </tr>
+                            <tr>
+                                <td>Roberto</td>
+                                <td>roberto@gmail.com</td>
+                                <td>React</td>
+                                <td>Gerenciamento de tempo</td>
+                                <td>< AiOutlineDelete /></td>
+                            </tr>
+                            <tr>
+                                <td>Silvia</td>
+                                <td>silvia@gmail.com</td>
+                                <td>Node.js</td>
+                                <td>Comunicação, Liderança</td>
+                                <td>< AiOutlineDelete /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div className="child-modal-btns">
+                    <div className="child-modal-save">
+                        <Button
+                            variant={"contained"}
+                            sx={{
+                                width: '148px',
+                                height: '50px',
+                                color: '#F5F5F5',
+                                backgroundColor: 'black',
+                                borderRadius: '10px',
+                                fontSize: '16px',
+                            }}
+                            onClick={handleClose}
+                        >
+                            Salvar
+                        </Button> 
+                    </div>
+                    <div className="child-modal-close">
+                        <Button sx={{width: '148px',height: '45px', color: 'black'}} onClick={handleClose} >fechar</Button>
+                    </div>
+                </div>
             </Box>
             </Modal>
         </React.Fragment>
