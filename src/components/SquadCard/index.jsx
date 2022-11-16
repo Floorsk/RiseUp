@@ -229,10 +229,9 @@ export const SquadCard = () => {
 
                         <div className="modal-container-header" >
                             <h1>Edição de informações</h1>
-                            <div className="exit-button" onClick={() => {handleClose()}}>
-                                <AiOutlineCloseCircle />
-                            </div>
                         </div>
+
+                        <hr className="row"/>
                         
                         <div className="modal-container-select-area">
 
@@ -323,6 +322,7 @@ export const SquadCard = () => {
                                             <MenuItem value={2}>Porto  Digital</MenuItem>
                                             <MenuItem value={3}>Cesar</MenuItem>
                                             <MenuItem value={4}>Avanade</MenuItem>
+                                            <MenuItem value={5}>Accenture</MenuItem>
                                         </Select>
                                     </FormControl>
 
@@ -385,7 +385,7 @@ export const SquadCard = () => {
                             </div>
                         </div>
 
-                        <div className="modal-container-button-area">
+                        <div className="modal-container-button-area" >
                             <Button 
                                 variant={"contained"}
                                 sx={{
@@ -396,7 +396,7 @@ export const SquadCard = () => {
                                     borderRadius: '10px',
                                     fontSize: '16px',
                                 }}
-
+                                onClick={() => {handleClose()}}
                             >
                                 Salvar
                             </Button>

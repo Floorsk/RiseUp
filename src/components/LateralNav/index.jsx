@@ -15,34 +15,41 @@ export const LateralNav = () => {
                 <div className="small-orange-ball-area">
                     <div className="small-orange-ball" />
                 </div>
-                <div className="nav">
-                    <div className="nav-direction"/>
+                <nav>
                     <ul>
                         <li>
-                            <div className="lateral-button-area">
+                            <Link className="lateral-button-area" to="/MainPage" id='link'>
+
                                 <div className="icon">
                                     <FaHome size={30}/>
                                 </div>
-                                <Link to="/MainPage" id='link'>Painel Inicial</Link>
-                            </div>
+
+                                Painel Inicial
+
+                            </Link>
                         </li>
                         <li>
-                            <div className="lateral-button-area">
+                            <Link className="lateral-button-area" to="/Uni" id='link'>
+
                                 <div className="icon">
                                     <FaUniversity size={30}/>
                                 </div>
-                                <Link to="/Uni" id='link'>Instituições</Link>
-                            </div>
+
+                                Instituições
+
+                            </Link>
                         </li>
                     </ul>
-                </div>
+                </nav>
                 <div className="exit-area">
-                    <div className="exit">
+                    <Link className="exit" to="/LoginPorto" id='link'>
+
                         <div className="icon">
                             <FaSignOutAlt size={30}/>
                         </div>
-                        <Link to="/LoginPorto" id='link'>Sair</Link>
-                    </div>
+                        Sair
+                        
+                    </Link>
                 </div>
             </div>
         </div>

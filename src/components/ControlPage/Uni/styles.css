@@ -1,4 +1,5 @@
-h1, h2 {
+h1,
+h2 {
     margin: 0;
 }
 
@@ -7,10 +8,15 @@ h1, h2 {
     height: 100vh;
     display: flex;
 }
+
 .uni-content {
-    width: 1504px;
+    width: 70%;
     padding-left: 02%;
     padding-top: 02%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .back-button {
@@ -18,26 +24,43 @@ h1, h2 {
     align-items: center;
     margin-bottom: 10px;
 }
+
 .back-button a {
     font-weight: 600;
     text-decoration: none;
     color: #2B2C33;
 }
-.input-group-company {
+
+.input-group-uni {
     display: flex;
     flex-direction: column;
-  }
-  .input-box-company {
+    margin: 20px 0;
+}
+
+.input-box-uni {
     display: flex;
     justify-content: space-between;
-  }
+    margin: 15px 0;
+}
+
 #shift-group-label {
     font-size: 25px;
     font-weight: 400;
     color: #000000;
 }
 
-.institution-info {
-    margin-top: 02%;
+.institution-info,
+.students-amount,
+.class-schedule {
+    margin-top: 20px;
+}
 
+.class-schedule {
+    display: flex;
+    width: 358px;
+    justify-content: space-between;
+}
+
+.register-uni-button {
+    margin: 40px 0;
 }
