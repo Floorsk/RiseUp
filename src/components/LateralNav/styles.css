@@ -1,5 +1,6 @@
 .lateral-container {
-    width: 375px;
+    /* width: 375px; */
+    width: 350px;
     height: 100vh;
     display: flex;
 }
@@ -8,23 +9,36 @@
     width: 100%;
     height: 100%;
     display: flex;
-    background-color: #319AC0;
+    /* background-color: #319AC0; */
+    background-color: #2A55D9;
     flex-direction: column;
 }
 
-.small-orange-ball-area {
+.logo-area{
     height: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.small-orange-ball {
+/* .small-orange-ball-area {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .small-orange-ball {
     margin: 0px 25px 0px 25px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background: linear-gradient(324.93deg, #FDAE50 0.74%, #319AC0 100%);
+} */
+
+.img-area {
+    display: flex;
+    width: 80%;
 }
 
 nav {
@@ -39,6 +53,7 @@ nav ul {
     width: 70%;
     height: 100%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     text-decoration: none;
 }
@@ -49,21 +64,21 @@ nav li {
     width: 100%;
     margin-bottom: 50px;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .lateral-button-area {
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: center;
+    margin-left: 20px;
 }
 
 /* Animação */
 .lateral-button-area::after {
     content: "";
     position: absolute;
-    background-color: #000;
+    background-color: #e5e5e5;
     height: 2px;
     width: 0;
     left: 0;
@@ -72,14 +87,14 @@ nav li {
 }
 
 .lateral-button-area:hover {
-    color: #000;
+    color: #e5e5e5;
     z-index: 1;
 }
 
 .lateral-button-area:hover::after {
     width: 100%;
     z-index: -10;
-    opacity: 0.1;
+    opacity: 1;
 }
 
 a {
@@ -105,10 +120,11 @@ a {
     justify-content: center;
     text-decoration: none;
     color: #F5F5F5;
+    margin-right: 15px;
 }
 
 .exit:hover {
-    color: #000;
+    color: #e5e5e5;
 }
 
 @media screen and (max-width: 1100px) {
@@ -126,22 +142,32 @@ a {
         margin-right: 1.7rem;
     }
 
-    #link {
+    .lateral-button-area {
+        margin-left: 55px;
+    }
+
+    .button-label {
         display: none;
     }
 
     .exit {
-        margin-left: 7rem;
+        margin-left: 25px;
     }
+
+    
 }
 
 @media screen and (max-width: 586px) {
     .lateral-container {
-        width: 120px;
+        width: 100px;
     }
 
-    .small-orange-ball {
-        width: 50px;
-        height: 50px;
+    .lateral-button-area {
+        margin-left: 22px;
+    }
+
+    .exit {
+        margin-left: 27px;
     }
 }
+

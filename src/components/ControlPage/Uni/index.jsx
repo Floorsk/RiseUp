@@ -38,105 +38,95 @@ export const Uni = () => {
     return (
         <div className="uni-container">
             <LateralNav />
-            <div className="uni-content">
-                <h1>Cadastro</h1>
-                <h3>Instituição</h3>
-
-                <div className="input-group-uni">
-
-                    <div className="input-box-uni">
-                        <TextField
-                            label="Nome da instituição  "
-                            placeholder=''
-                            sx={{ width: '358px', color: '#2B2C33' }}
-                        />
-
-                    </div>
-
-                    <div className="input-box-uni">
-                        <TextField
-                            label="E-mail do representante"
-                            placeholder='johndoe@example.com'
-                            sx={{ width: '358px', color: '#2B2C33' }}
-                        />
-                    </div>
-
-                    <div className="input-box-uni">
-                        <TextField
-                            label="Telefone do representante"
-                            placeholder='(00)99999-9999'
-                            sx={{ width: '358px', color: '#2B2C33' }}
-                        />
-                    </div>
-
-                    <div className="input-box-uni">
-                        <TextField
-                            label="Turma"
-                            sx={{ width: '358px', color: '#2B2C33' }}
-                        />
-
-
-                    </div>
-                    <FormControl>
-                        <RadioGroup
-                            row
-                            aria-aria-labelledby='shift-group-label'
-                            name="shift-group"
-                        >
-                            <FormControlLabel value="manha" control={<Radio />} label="Manha" />
-                            <FormControlLabel value="tarde" control={<Radio />} label="Tarde" />
-                            <FormControlLabel value="noite" control={<Radio />} label="Noite" />
-                        </RadioGroup>
-                    </FormControl>
-
-                    <div className="institution-info">
-                        <div className="institution-info-course">
+            <div className="uni-content-area">
+                <div className="uni-content">
+                    <h1>Cadastro</h1>
+                    <h3>Instituição</h3>
+                    <div className="input-group-uni">
+                        <div className="input-box-uni">
+                            <TextField
+                                label="Nome da instituição  "
+                                placeholder=''
+                                sx={{ width: '358px', color: '#2B2C33' }}
+                            />
+                        </div>
+                        <div className="input-box-uni">
+                            <TextField
+                                label="E-mail do representante"
+                                placeholder='johndoe@example.com'
+                                sx={{ width: '358px', color: '#2B2C33' }}
+                            />
+                        </div>
+                        <div className="input-box-uni">
+                            <TextField
+                                label="Telefone do representante"
+                                placeholder='(00)99999-9999'
+                                sx={{ width: '358px', color: '#2B2C33' }}
+                            />
+                        </div>
+                        <div className="input-box-uni">
+                            <TextField
+                                label="Turma"
+                                sx={{ width: '358px', color: '#2B2C33' }}
+                            />
+                        </div>
+                        <div className="shift-group">
                             <FormControl>
-                                <InputLabel id='course-name'>Curso</InputLabel>
-                                <Select
-                                    labelId='course-name'
-                                    label="Curso"
-                                    value={course}
-                                    onChange={handleChangeCourse}
-                                    sx={{ width: '358px', color: '#2B2C33' }}
+                                <RadioGroup
+                                    row
+                                    aria-aria-labelledby='shift-group-label'
+                                    name="shift-group"
                                 >
-                                    <MenuItem value={1}>Sistemas Para Internet</MenuItem>
-                                    <MenuItem value={2}>Análise e Desenvolvimento de Sistemas</MenuItem>
-                                </Select>
+                                    <FormControlLabel value="manha" control={<Radio />} label="Manha" />
+                                    <FormControlLabel value="tarde" control={<Radio />} label="Tarde" />
+                                    <FormControlLabel value="noite" control={<Radio />} label="Noite" />
+                                </RadioGroup>
                             </FormControl>
                         </div>
-
-                    </div>
-
-                    <div className="students-amount">
-                        <TextField
-                            label="Quantidade de estudantes"
-                            placeholder='Quantidade de estudantes'
-                            type="number"
-                            sx={{ width: '358px', color: '#2B2C33' }}
-                        />
-                    </div>
-
-                    <div className="class-schedule">
-                        <FormControl>
-                            <InputLabel id="weekday-select-label">Dia da semana</InputLabel>
-                            <Select
-                                labelId="weekday-select-label"
-                                id="weekday-select"
-                                value={day}
-                                label="Dia da semana"
-                                onChange={handleChangeDay}
-                                sx={{ width: '160px', color: '#2B2C33' }}
-                            >
-                                <MenuItem value={1}>Segunda</MenuItem>
-                                <MenuItem value={2}>Terça</MenuItem>
-                                <MenuItem value={3}>Quarta</MenuItem>
-                                <MenuItem value={3}>Quinta</MenuItem>
-                                <MenuItem value={3}>Sexta</MenuItem>
-                            </Select>
-                        </FormControl>
-
-                        <FormControl>
+                        <div className="uni-institution-info">
+                            <div className="uni-institution-info-course">
+                                <FormControl>
+                                    <InputLabel id='course-name'>Curso</InputLabel>
+                                    <Select
+                                        labelId='course-name'
+                                        label="Curso"
+                                        value={course}
+                                        onChange={handleChangeCourse}
+                                        sx={{ width: '358px', color: '#2B2C33' }}
+                                    >
+                                        <MenuItem value={1}>Sistemas Para Internet</MenuItem>
+                                        <MenuItem value={2}>Análise e Desenvolvimento de Sistemas</MenuItem>
+                                    </Select>
+                                </FormControl>
+                            </div>
+                        </div>
+                        <div className="students-amount">
+                            <TextField
+                                label="Quantidade de estudantes"
+                                placeholder='Quantidade de estudantes'
+                                type="number"
+                                sx={{ width: '358px', color: '#2B2C33' }}
+                            />
+                        </div>
+                        <div className="class-schedule">
+                            <FormControl>
+                                <InputLabel id="weekday-select-label">Dia da semana</InputLabel>
+                                <Select
+                                    labelId="weekday-select-label"
+                                    id="weekday-select"
+                                    value={day}
+                                    label="Dia da semana"
+                                    onChange={handleChangeDay}
+                                    sx={{ width: '160px', color: '#2B2C33' }}
+                                >
+                                    <MenuItem value={1}>Segunda</MenuItem>
+                                    <MenuItem value={2}>Terça</MenuItem>
+                                    <MenuItem value={3}>Quarta</MenuItem>
+                                    <MenuItem value={3}>Quinta</MenuItem>
+                                    <MenuItem value={3}>Sexta</MenuItem>
+                                </Select>
+                            </FormControl>
+                            <FormControl>
                                 <InputLabel id='hour'>Horário</InputLabel>
                                 <Select
                                     labelId='hour-select'
@@ -152,25 +142,23 @@ export const Uni = () => {
                                     <MenuItem value={5}>20:30</MenuItem>
                                 </Select>
                             </FormControl>
+                        </div>
+                        <div className="register-uni-button">
+                            <Button
+                                variant={"contained"}
+                                sx={{
+                                    height: '50px',
+                                    borderRadius: '10px',
+                                    fontFamily: 'Space Grotesk',
+                                    fontSize: '14px',
+                                    weight: '700',
+                                    backgroundColor: '#000000'
+                                }}
+                            >
+                                Adiconar nova instituição
+                            </Button>
+                        </div>
                     </div>
-
-                    <div className="register-uni-button">
-                        <Button
-                            variant={"contained"}
-                            sx={{
-                                width: '358px',
-                                height: '50px',
-                                borderRadius: '10px',
-                                fontFamily: 'Space Grotesk',
-                                fontSize: '14px',
-                                weight: '700',
-                                backgroundColor: '#000000'
-                            }}
-                        >
-                            Adiconar nova instituição
-                        </Button>
-                    </div>
-
                 </div>
             </div>
         </div>

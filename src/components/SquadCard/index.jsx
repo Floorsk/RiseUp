@@ -17,17 +17,24 @@ import { AiOutlineCloseCircle, AiOutlineDelete, AiOutlineInfo } from 'react-icon
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { StoreMallDirectorySharp } from '@mui/icons-material';
 
-export const SquadCard = () => {
+interface Props extends SquadCard {
+    numero: int;
+}
+
+export const SquadCard = (({
+    numero
+} : Props)) => {
 
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false)
 
-
+    
     const cardItem = {
         company: ["Microsoft Inc", "Disney Inc", "Porto  Digital", "Cesar", "Avanade", "Accenture"],
         inst: ["UNICAP", "UNIT", "SENAC", "IFPE"],
-        hour: ["18:00", "18:30", "19:00", "19:30", "20:00", "20:30"],
+        /* hour: ["18:00", "18:30", "19:00", "19:30", "20:00", "20:30"], */
+        hour: ["18:00", "18:00", "18:00", "18:00", "18:00", "18:30", "18:30", "18:30", "18:30", "18:30", "19:00", "19:00", "19:00",  "19:30", "19:30", "19:30", "19:30", "19:30", "19:30", "20:00", "20:00", "20:00", "20:00", "20:00", "20:30", "20:30", "20:30", "20:30"],
         number: [1, 2]
     }
 
@@ -37,9 +44,11 @@ export const SquadCard = () => {
     const [instNum, setInstNum] = useState(Math.floor(Math.random() * cardItem.inst.length))
     const [instituicao, setInstituicao] = useState(cardItem.inst[instNum]);
     
-    const [squad, setSquad] = useState(Math.floor(Math.random() * 10));
+    /* const [squad, setSquad] = useState(Math.floor(Math.random() * 10)); */
+    const [squad, setSquad] = useState(numero + 1);
 
-    const [horarioNum, setHorarioNum] = useState(Math.floor(Math.random() * cardItem.hour.length))
+    /* const [horarioNum, setHorarioNum] = useState(Math.floor(Math.random() * cardItem.hour.length)) */
+    const [horarioNum, setHorarioNum] = useState(numero)
     const [horario, setHorario] = useState(cardItem.hour[horarioNum]);
 
     const [num, setNum] = useState(cardItem.number[Math.floor(Math.random() * cardItem.number.length)]);
@@ -216,7 +225,7 @@ export const SquadCard = () => {
     return(
         <div className='squad-card' onClick={() => handleOpen()}>
             <h3>{empresa}</h3>
-            <p className="squad-name">Squad 0{squad}</p>
+            <p className="squad-name">Squad {squad}</p>
             <p className="inst-name">{instituicao}</p>
             <p className="hour">{horario}</p>
             <Modal

@@ -3,12 +3,16 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-color: #319AC0;
+    background-color: #2A55D9;
 }
-.orange-ball {
+/* .orange-ball {
     margin: 0px 25px 0px 25px;
     width: 440px;
     height: 451px;
     border-radius: 50%;
     background: linear-gradient(324.93deg, #FDAE50 0.74%, #319AC0 100%);
+} */
+.img-area-sideblue {
+    display: flex;
+    width: 80%;
 }

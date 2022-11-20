@@ -1,0 +1,113 @@
+.management-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.management-content {
+    /* width: 1504px; */
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.access-area {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.access-header {
+    width: 100%;
+}
+
+.access-area h1 {
+    padding: 2rem 1.5rem;
+    font-size: 36px;
+    color: #2A55D9;
+}
+
+.access-area hr {
+    width: 99%;
+}
+
+.access-select-label {
+    width: 100%;
+}
+
+.access-select-label h2 {
+    padding: 2rem 1.7rem;
+}
+
+.access-select {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.access-select-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5rem 0;
+}
+
+.access-buttom-area {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .access-area {
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 0px;
+    }
+
+    .access-header h1 {
+        font-size: 28px;
+    }
+
+    .access-select-label h2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .management-content {
+        width: 90%;
+    }
+
+    .access-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .access-header h1 {
+        font-size: 21px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .access-select-label h2 {
+        font-size: 18px;
+    }
+
+    .access-select-group :last-child {
+        font-size: 30;
+    }
+
+    .access-buttom-area :first-child{
+        width: 200px;
+    }
+}

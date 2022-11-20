@@ -11,7 +11,7 @@
     cursor: pointer;
 }
 .squad-card h3 {
-    color: #76DAF1;
+    color: #2A55D9;
     font-size: 22px;
     font-weight: 700;
 }
@@ -185,13 +185,15 @@
     margin-right: 0%;
     border-collapse: collapse;
     font-size: 0.9em;
-    box-shadow: 0 0 20px rgba(49, 154, 192, 0.7);
+    /* box-shadow: 0 0 20px rgba(49, 154, 192, 0.7); */
+    box-shadow: 0 0 20px rgba(42, 85, 217, 0.7);
 }
 .child-modal-table th, .child-modal-table td {
     padding: 12px 15px;
 }
     .child-modal-table thead tr {
-        background-color: rgba(49, 154, 192, 0.7);
+        /* background-color: rgba(49, 154, 192, 0.7); */
+        background-color: #2A55D9;
         color: #ffffff;
         text-align: left;
     }

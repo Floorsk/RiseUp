@@ -4,6 +4,10 @@ import {
     Box,
     FormControlLabel,
     FormLabel,
+    FormControl,
+    InputLabel,
+    Select,
+    MenuItem,
     Button,
     FormGroup,
     Checkbox
@@ -12,7 +16,6 @@ import { useDropzone } from 'react-dropzone'
 import { useState } from 'react';
 import { AiOutlineLeft } from 'react-icons/ai';
 import { SideBlue } from '../../components/SideBlue';
-import Date from '../../components/Date';
 
 export const RegisterCompany = (props) => {
 
@@ -24,7 +27,17 @@ export const RegisterCompany = (props) => {
         </li>
     ));
 
+    const [day, setDay] = useState();
 
+    const handleChangeDay = (event) => {
+        setDay(event.target.value)
+    }
+
+    const [turma, setTurma] = useState();
+
+    const handleChangeTurma = (event) => {
+        setTurma(event.target.value)
+    }
 
     return (
         <div className="register-company-container">
@@ -34,7 +47,7 @@ export const RegisterCompany = (props) => {
             </div>
 
             <div className="register-company">
-                <form action="#" id="register-form-company">
+
                     <div className="register-header">
                         <div className="back-button">
                             <AiOutlineLeft />
@@ -100,7 +113,7 @@ export const RegisterCompany = (props) => {
                                 maxWidth: '100%',
                             }}
                         >
-                            <TextField fullWidth label="" id="box-space"/>
+                            <TextField fullWidth label="" id="box-space" />
                         </Box>
 
                         <h3>Faça uma breve descrição da solução esperada. Como ela deve
@@ -143,22 +156,22 @@ export const RegisterCompany = (props) => {
                         <h3>Quais referências podem ser apresentadas aos alunos para auxiliar no
                             entendimento do problema e nas possíveis soluções? Algum material
                             interno da empresa pode ser disponibilizado?</h3>
-                            
+
                         <div className="upload-img">
-                            
-                             <div {...getRootProps({ className: 'dropzone' })}>
+
+                            <div {...getRootProps({ className: 'dropzone' })}>
                                 <input {...getInputProps()} />
-                            <img src='https://i.imgur.com/18F0qEX.png' />    
-                            <p><a href="#">Clique para enviar </a> ou arraste e solte</p>
-                            <p>PDF ou docx (Max. 15mb)</p></div>
-
-                           
+                                <img src='https://i.imgur.com/18F0qEX.png' />
+                                <p><a href="#">Clique para enviar </a> ou arraste e solte</p>
+                                <p>PDF ou docx (Max. 15mb)</p></div>
 
 
-                                <aside>
-                                    <h4>Files</h4>
-                                    <ul>{files}</ul>
-                                </aside>
+
+
+                            <aside>
+                                <h4>Files</h4>
+                                <ul>{files}</ul>
+                            </aside>
 
 
                         </div>
@@ -167,10 +180,53 @@ export const RegisterCompany = (props) => {
 
                             <h3>Visando uma melhor organização, insira abaixo os horários e dias
                                 das semanas que a empresa tem disponibilidade para as mentorias:</h3>
-                            
-                                    
+
+
                         </div>
-                            <Date />
+
+                        <div className="select-date">
+
+                            <div className="company-week">
+                                <FormControl>
+                                    <InputLabel id="company-weekday-select-label">Dia da semana</InputLabel>
+                                    <Select
+                                        labelId="company-weekday-select-label"
+                                        id="company-weekday-select"
+                                        value={day}
+                                        label="Dia da semana"
+                                        onChange={handleChangeDay}
+                                        sx={{ color: '#2B2C33' }}
+                                    >
+                                        <MenuItem value={1}>Segunda</MenuItem>
+                                        <MenuItem value={2}>Terça</MenuItem>
+                                        <MenuItem value={3}>Quarta</MenuItem>
+                                        <MenuItem value={3}>Quinta</MenuItem>
+                                        <MenuItem value={3}>Sexta</MenuItem>
+                                    </Select>
+                                </FormControl>
+                            </div>
+
+                            <div className="company-hour">
+                                <FormControl>
+                                    <InputLabel id='company-hour-label'>Horário</InputLabel>
+                                    <Select
+                                        labelId='company-hour-select'
+                                        label="Horário"
+                                        onChange={handleChangeTurma}
+                                        sx={{color: '#2B2C33' }}
+                                    >
+                                        <MenuItem value={0}>18:00</MenuItem>
+                                        <MenuItem value={1}>18:30</MenuItem>
+                                        <MenuItem value={2}>19:00</MenuItem>
+                                        <MenuItem value={3}>19:30</MenuItem>
+                                        <MenuItem value={4}>20:00</MenuItem>
+                                        <MenuItem value={5}>20:30</MenuItem>
+                                    </Select>
+                                </FormControl>
+                            </div>
+
+                        </div>
+
                         <div className="comment-box">
                             <h3>
                                 Alguma dúvida ou sugestão?
@@ -180,14 +236,14 @@ export const RegisterCompany = (props) => {
                                 maxRows={4}
                                 sx={{
 
-                                    width: '50%',
+                                    width: '100%',
                                     maxWidth: '100%',
                                 }}
                             >
                                 <TextField fullWidth label="" id="box-space" />
                             </Box>
                         </div>
-                        <div className="button-advance">
+                        <div className="company-button-advance">
                             <Button
                                 variant={"contained"}
                                 sx={{
@@ -206,7 +262,7 @@ export const RegisterCompany = (props) => {
                         </div>
 
                     </div>
-                </form>
+
             </div>
         </div>
     )

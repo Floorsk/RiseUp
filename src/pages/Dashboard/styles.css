@@ -19,12 +19,46 @@
     height: 80%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
-    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
-    box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: 1px 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 }
+
+.porto-brand {
+    padding: 10rem;
+}
+
 .wellcome-message {
-    color: #319AC0;
+    color: #2A55D9;
+}
+
+@media screen and (max-width: 1196px) {
+    .control-painel-wellcome {
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 0px;
+    }
+
+    .porto-brand {
+        padding: 7rem;
+    }
+
+    .wellcome-message h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    
+    .control-painel-wellcome {
+        justify-content: center;
+    }
+
+    .porto-brand {
+        padding: 1rem;
+    }
+
+    .wellcome-message h1 {
+        font-size: 16px;
+    }
 }

@@ -18,7 +18,8 @@
 }
 .header h1 {
     margin-top: 10px;
-    color: #319AC0;
+    /* color: #319AC0; */
+    color: #2A55D9;
 }
 .filter {
     width: 50%;
@@ -43,6 +44,8 @@ hr {
 .squads ul {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
 }
 @media screen and (max-width: 1709px) {
     .filter {
@@ -161,6 +164,11 @@ hr {
     }
 }
 @media screen and (max-width: 450px) {
+    .squads ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .squad-card {
         width: 186px;
         height: 131px;

@@ -13,13 +13,14 @@ import { Dashboard } from './pages/Dashboard';
 import { RegisterCompany } from './pages/RegisterCompany';
 import { MainPage } from './components/ControlPage/MainPage';
 import { Uni } from './components/ControlPage/Uni';
-
+import { Management } from './components/ControlPage/Management';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
+
           <Route exact path="/" element={<LandingPage/>}/>
           <Route path="/LoginPorto" element={<LoginPorto/>}/>
           <Route path="/RegisterStudent" element={<RegisterStudent/>}/>
@@ -30,7 +31,8 @@ function App() {
           <Route path="/RegisterCompany" element={<RegisterCompany/>}/>
           <Route path="/MainPage" element={<MainPage/>}/>
           <Route path="/Uni" element={<Uni/>}/>
-
+          <Route path="/Management" element={<Management/>}/>
+          
         </Routes>
       </div>
     </Router>

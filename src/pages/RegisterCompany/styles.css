@@ -17,7 +17,7 @@
   
   h3 {
     margin: 15px 0px;
-    font-size: 20px;
+    font-size: 19px;
     font-family: 'Inter';
     font-weight: 400;
   }
@@ -37,9 +37,8 @@
   .register-company {
     display: flex;
     position: relative;
-    width: 73%;
-    margin: 3rem;
-    padding-left: 3rem;
+    width: 70%;
+    padding: 3rem 3rem;
     flex-direction: column;
     z-index: 5;
     padding-right: 5rem;
@@ -83,10 +82,11 @@
   
   .register-header h1::after {
     content: '';
+    position: absolute;
     display: block;
     width: 5rem;
     height: 0.3rem;
-    background-color: #319AC0;
+    background-color: #2A55D9;
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
@@ -133,17 +133,29 @@
     justify-content: center;
   }  
   
-  date-picker {
+  .date-picker {
     display: flex;
     align-items: center;
     justify-items: center;
   }
+
+  .select-date {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+  }
+
+  .select-date :first-child {
+    width: 160px;
+  }
   
-  .button-advance {
+  .company-button-advance {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 50px;
+    margin-top: 50px;
   }
   
   @media screen and (max-width: 1709px) {
@@ -165,40 +177,16 @@
     }
   }
   
-  @media screen and (max-width: 1439px) {
-    .side-blue {
-      display: none;
-      margin-left: 0px;
-    }
-  
-    #register-form-company {
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-      margin-left: 22%;
-    }
-  
-    .register-company {
-      width: 100%;
-    }
-  }
-  
   @media screen and (max-width: 1300px) {
     .side-blue {
       display: none;
       margin-left: 0px;
     }
   
-    #register-form-company {
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-      margin-left: 0%;
-    }
-  
     .register-company {
       width: 100%;
     }
+
   }
   
   @media screen and (max-width: 999px) {
@@ -211,12 +199,6 @@
       width: 100%;
     }
   
-    #register-form-company {
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-    }
-  
     .input-box-company {
       display: flex;
       flex-direction: column;
@@ -226,12 +208,19 @@
       height: 55px;
     }
   
-    .button-advance {
-      width: 300px;
+    .select-date {
+      width: 100%;
+      justify-content: space-around;
     }
+
   }
   
   @media screen and (max-width: 671px) {
+
+    h3 {
+      font-size: 16px;
+    }
+
     .side-blue {
       display: none;
       margin-left: 0px;
@@ -239,15 +228,12 @@
   
     .register-company {
       width: 100%;
-      margin: 1.5rem;
+      padding: 1.5rem 1.5rem;
     }
-  
-    #register-form-company {
+
+
+    .input-group-company {
       width: 100%;
-      align-items: center;
-      justify-content: center;
-      padding-left: 0px;
-      margin-left: -31px;
     }
 
     .input-box-company {
@@ -257,12 +243,16 @@
       word-wrap: break-word;
       width: 300px;
       height: 55px;
+      margin: 20px 0px;
     }
   
     .input-box-company :last-child {
       width: 298px;
     }
-    .button-advance {
-      width: 220px;
+
+    .select-date {
+      width: 100%;
+      justify-content: space-between;
     }
+    
   }

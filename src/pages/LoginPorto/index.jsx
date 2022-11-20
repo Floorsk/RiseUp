@@ -52,7 +52,7 @@ export const LoginPorto = () => {
                             fontFamily: 'Space Grotesk',
                             fontSize: '13px',
                             weight: '400',
-                            backgroundColor: '#319AC0',
+                            backgroundColor: '#2A55D9',
                             alignItems: 'center'
                         }}
                         href="/Dashboard"

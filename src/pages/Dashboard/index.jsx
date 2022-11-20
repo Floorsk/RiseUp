@@ -1,14 +1,17 @@
 import './styles.css';
-import { LateralNav } from '../../components/LateralNav'; 
+import { LateralNav } from '../../components/LateralNav';
 
 export const Dashboard = () => {
-    return(
+    return (
         <div className="dashboard-container">
-            
-            <LateralNav/>
+
+            <LateralNav />
 
             <div className="dashboard">
                 <div className="control-painel-wellcome">
+                    <div className="porto-brand">
+                        <img src={require("../../assets/images/porto-color.png")} alt="" />
+                    </div>
                     <div className="wellcome-message">
                         <h1>BEM-VINDO AO PAINEL DE CONTROLE PORTO DIGITAL!</h1>
                     </div>

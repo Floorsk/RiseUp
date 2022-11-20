@@ -44,7 +44,7 @@
     display: block;
     width: 5rem;
     height: 0.3rem;
-    background-color: #319AC0;
+    background-color: #2A55D9;
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
@@ -57,10 +57,10 @@
 }
 #question-label {
     font-weight: 600;
-    font-size: 22px;
+    font-size: 19px;
     color: #000000;
     font-weight: 400;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
 }
 .checkbox-group-area {
     display: flex;

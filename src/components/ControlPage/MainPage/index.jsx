@@ -25,12 +25,18 @@ export const MainPage = () => {
     }
 
     const [cards, setCards] = useState([]);
+    
 
-    const cardSquad = <SquadCard id="squad-card" />
-
+    const [num, setNum] = useState(0)
+    const cardSquad = <SquadCard id="squad-card" numero={num}/>
+    
     const addCard = () => {
         setCards([...cards, cardSquad])
+        setNum(num + 1)
     }
+
+    /* Contador */
+
 
     return(
         <div className="main-page-container">
