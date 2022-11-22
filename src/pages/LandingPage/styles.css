@@ -466,8 +466,8 @@ footer {
         font-size: 12px;
     }
 
-    .object1 {
-        padding-left: 1px;
+    .object1, .object2 {
+        padding-left: 1%;
     }
 
     .icon-ii {
