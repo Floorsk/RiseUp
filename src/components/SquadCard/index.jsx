@@ -121,7 +121,8 @@ export const SquadCard = (({
                 aria-labelledby="child-modal-title"
                 aria-describedby="child-modal-description"
             >
-            <Box sx={{ ...style, /* width: "60%",  */border: '2px solid lightgrey' }} className="child-modal-container">
+            {/* width buga por conta do box */}
+            <Box sx={{ ...style, width: "60%", border: '2px solid lightgrey' }} className="child-modal-container">
                 <div className="child-modal-title">
                     <h2>Informação sobre Squad 9</h2>
                     <hr/>
