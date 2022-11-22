@@ -306,6 +306,10 @@ footer {
 /* Responsividade LandingPage */
 
 @media screen and (max-width: 600px) {
+    .home-container {
+        padding-top: 1rem;
+    }
+
     .info-section {
         width: 90%;
         padding-right: 0%;
