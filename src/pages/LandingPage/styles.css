@@ -332,6 +332,10 @@ footer {
         font-weight: 400;
     }
 
+    .info-button {
+        width: 100%;
+    }
+    
     .info-button p {
         font-size: 18px;
     }
@@ -418,7 +422,7 @@ footer {
 
     .det {
         width: 100%;
-        padding: 3% 3% 3% 3%;
+        padding: 0% 0% 0% 0%;
     }
 
     .det-content {
@@ -427,6 +431,7 @@ footer {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        padding: 0% 0%;
     }
 
     .det-img {
@@ -514,9 +519,9 @@ footer {
         font-size: 12px;
     }
 
-    .Porto {
+    /* .Porto {
         display: none;
-    }
+    } */
 
     .contatos {
         display: none;
