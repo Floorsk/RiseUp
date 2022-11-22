@@ -343,7 +343,7 @@ footer {
     .info-button {
         width: 100%;
     }
-    
+
     .info-button p {
         font-size: 18px;
     }
@@ -464,6 +464,13 @@ footer {
     .above,
     .below p {
         font-size: 12px;
+    }
+
+    .object1,
+    .object2,
+    .object3,
+    .object4 {
+        padding-right: 0%;
     }
 
     .icon-ii {
