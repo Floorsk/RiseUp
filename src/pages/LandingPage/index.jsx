@@ -174,18 +174,18 @@ export const LandingPage = () => {
                 <div className="review-head"><h2>A Residência Onboard e as empresas</h2></div>
                 <div className="cards">
                     <div className="card">
-                        <div><p> "Essa parceria universidade,ecossistema de inovação e empresas é o que vai trazer sustentabilidade para nosso ecossistema a longo prazo."</p></div>
-                        <div class="icon"> <h3>Rogério Moreira</h3> <img src={ rogerio } /> </div>
+                        <p> "Essa parceria universidade, ecossistema de inovação e empresas é o que vai trazer sustentabilidade para nosso ecossistema a longo prazo."</p>
+                        <div className="icone"> <h3>Rogério Moreira</h3> <img src={ rogerio } /> </div>
                     </div>
 
                     <div className="card">
                         <p>"Oportunidade única de descobrir novos talentos, formar novos talentos. É bom para nós e bom para os alunos."</p>
-                        <div class="icon"> <h3>Marco Carnut</h3> <img src={ marco } /> </div>
+                        <div className="icone"> <h3>Marco Carnut</h3> <img src={ marco } /> </div>
                     </div>
 
                     <div className="card">
                         <p>"Na residência Onboard, os jovens são moldados para o sucesso na área de tecnologia, e isso para as empresas é muito importante."</p>
-                        <div class="icon"> <h3>Flávia Brito</h3> <img src={ flavia } /> </div>
+                        <div className="icone"> <h3>Flávia Brito</h3> <img src={ flavia } /> </div>
                     </div>
                 </div>
             </div>

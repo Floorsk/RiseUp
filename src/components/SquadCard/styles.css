@@ -54,6 +54,12 @@
     align-items: center;
     justify-content: center;
 }
+
+.modal-container-header h1 {
+    color: #2A55D9;
+    font-size: 28px;
+}
+
 .row {
     width: 90%;
 }
@@ -140,13 +146,72 @@
     justify-content: space-around;
     height: 139px;
 }
+/* Responsividade do modal */
+@media screen and (max-width: 666px) {
+    .modal-container-area {
+        width: 393px;
+        height: 100vh;
+        border-radius: 0px;
+    }
+
+    .modal-container-select-area {
+        margin-top: 10px;
+    }
+
+    .upper-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .left-area, .right-area {
+        width: 100%;
+        height: 190px;
+        display: flex;
+        align-items: center;
+    }
+
+    .left-area {
+        margin-bottom: 10px;
+    }
+
+    .right-area {
+        height: 240px;
+    }
+
+    .bottom-area {
+        height: 120px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .modal-container-button-area {
+        width: 75%;
+    }
+    
+    .modal-container-button-area :nth-child(1n) {
+        width: 120px;
+        height: 47px;
+    }
+}
+
 /* child modal styles start */
+.child-modal-container {
+    width: 60%;
+}
+
 .child-modal-title, .child-modal-extra, .table, .child-modal-btns{
     width: 98%;
     margin: 2%, 0.5%;
     justify-content: center;
     padding-left: 2%;
     padding-right: 2%;
+}
+.child-modal-title {
+    color: #2A55D9;
 }
 /* child modal styles end */
 .child-modal-title h2{
@@ -212,3 +277,41 @@
         justify-content: end;
         padding-top: 1%;
     }  
+
+/* Responsividade do child modal */
+@media screen and (max-width: 1090px) {
+    .child-modal-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .child-modal-title h2 {
+        color: #2A55D9;
+        font-size: 26px;
+    }
+
+    .table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    th :nth-child(2n) {
+        display: none;
+    }
+
+    tr :nth-child(2n) {
+        display: none;
+    }
+
+    .child-modal-btns {
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .child-modal-save :first-child, .child-modal-close {
+        width: 100px;
+        height: 40px;
+    }
+}

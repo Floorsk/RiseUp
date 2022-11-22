@@ -121,7 +121,7 @@ export const SquadCard = (({
                 aria-labelledby="child-modal-title"
                 aria-describedby="child-modal-description"
             >
-            <Box sx={{ ...style, width: 0.60, border: '2px solid lightgrey' }}>
+            <Box sx={{ ...style, /* width: "60%",  */border: '2px solid lightgrey' }} className="child-modal-container">
                 <div className="child-modal-title">
                     <h2>Informação sobre Squad 9</h2>
                     <hr/>
@@ -266,11 +266,11 @@ export const SquadCard = (({
                                                 width: '260px',
                                             }}
                                         >
-                                            <MenuItem value={1}>Squad 01</MenuItem>
-                                            <MenuItem value={2}>Squad 02</MenuItem>
-                                            <MenuItem value={3}>Squad 03</MenuItem>
-                                            <MenuItem value={4}>Squad 04</MenuItem>
-                                            <MenuItem value={squad}>Squad 0{squad}</MenuItem>
+                                            <MenuItem value={1}>Squad 2</MenuItem>
+                                            <MenuItem value={2}>Squad 2</MenuItem>
+                                            <MenuItem value={3}>Squad 3</MenuItem>
+                                            <MenuItem value={4}>Squad 6</MenuItem>
+                                            <MenuItem value={squad}>Squad {squad}</MenuItem>
                                         </Select>
                                     </FormControl>
 
@@ -349,47 +349,47 @@ export const SquadCard = (({
                             </div>
                             <div className="bottom-area">
                                 
-                            <FormControl variant="outlined">
-                                <InputLabel id="weekday-select">Dia da semana</InputLabel>
-                                <Select
-                                    defaultValue={1}
-                                    labelId="weekday-select"
-                                    id="weekday-select"
-                                    value={day}
-                                    label="Dia da semana"
-                                    onChange={handleChangeDay}
-                                    sx={{
-                                        width: '260px',
-                                    }}
-                                >
-                                    <MenuItem value={1}>Segunda</MenuItem>
-                                    <MenuItem value={2}>Terça</MenuItem>
-                                    <MenuItem value={3}>Quarta</MenuItem>
-                                    <MenuItem value={3}>Quinta</MenuItem>
-                                    <MenuItem value={3}>Sexta</MenuItem>
-                                </Select>
-                            </FormControl>
+                                <FormControl variant="outlined">
+                                    <InputLabel id="weekday-select">Dia da semana</InputLabel>
+                                    <Select
+                                        defaultValue={1}
+                                        labelId="weekday-select"
+                                        id="weekday-select"
+                                        value={day}
+                                        label="Dia da semana"
+                                        onChange={handleChangeDay}
+                                        sx={{
+                                            width: '260px',
+                                        }}
+                                    >
+                                        <MenuItem value={1}>Segunda</MenuItem>
+                                        <MenuItem value={2}>Terça</MenuItem>
+                                        <MenuItem value={3}>Quarta</MenuItem>
+                                        <MenuItem value={3}>Quinta</MenuItem>
+                                        <MenuItem value={3}>Sexta</MenuItem>
+                                    </Select>
+                                </FormControl>
 
-                            <FormControl>
-                                <InputLabel id='hour'>Horário</InputLabel>
-                                <Select
-                                    defaultValue={horarioNum}
-                                    labelId='hour-select'
-                                    label="Horário"
-                                    value={squads}
-                                    onChange={handleChangeTurma}
-                                    sx={{
-                                        width: '260px',
-                                    }}
-                                >
-                                    <MenuItem value={0}>18:00</MenuItem>
-                                    <MenuItem value={1}>18:30</MenuItem>
-                                    <MenuItem value={2}>19:00</MenuItem>
-                                    <MenuItem value={3}>19:30</MenuItem>
-                                    <MenuItem value={4}>20:00</MenuItem>
-                                    <MenuItem value={5}>20:30</MenuItem>
-                                </Select>
-                            </FormControl>
+                                <FormControl>
+                                    <InputLabel id='hour'>Horário</InputLabel>
+                                    <Select
+                                        defaultValue={horarioNum}
+                                        labelId='hour-select'
+                                        label="Horário"
+                                        value={squads}
+                                        onChange={handleChangeTurma}
+                                        sx={{
+                                            width: '260px',
+                                        }}
+                                    >
+                                        <MenuItem value={0}>18:00</MenuItem>
+                                        <MenuItem value={1}>18:30</MenuItem>
+                                        <MenuItem value={2}>19:00</MenuItem>
+                                        <MenuItem value={3}>19:30</MenuItem>
+                                        <MenuItem value={4}>20:00</MenuItem>
+                                        <MenuItem value={5}>20:30</MenuItem>
+                                    </Select>
+                                </FormControl>
 
                             </div>
                         </div>
