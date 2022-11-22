@@ -461,16 +461,13 @@ footer {
         font-size: 14px;
     }
 
-    .above,
+    .above p,
     .below p {
         font-size: 12px;
     }
 
-    .object1,
-    .object2,
-    .object3,
-    .object4 {
-        padding-right: 0%;
+    .object1 {
+        padding-left: 1px;
     }
 
     .icon-ii {
