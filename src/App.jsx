@@ -14,6 +14,7 @@ import { RegisterCompany } from './pages/RegisterCompany';
 import { MainPage } from './components/ControlPage/MainPage';
 import { Uni } from './components/ControlPage/Uni';
 import { Management } from './components/ControlPage/Management';
+import { Maintenance } from './pages/Maintenance';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/MainPage" element={<MainPage/>}/>
           <Route path="/Uni" element={<Uni/>}/>
           <Route path="/Management" element={<Management/>}/>
+          <Route path="/Maintenance" element={<Maintenance/>}/>
           
         </Routes>
       </div>
