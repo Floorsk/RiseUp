@@ -10,7 +10,7 @@ import { TwitterSquareFilled, FacebookFilled, LinkedinFilled } from "@ant-design
 
 export const Maintenance = () => {
     return (
-        <div className='home-container'>
+        <div className='maintenance-container'>
             <h1>Inscrições fechadas!</h1>
             <img src="https://i.imgur.com/g66yvph.gif"></img>
         </div>
