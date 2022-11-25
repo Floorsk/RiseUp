@@ -1,69 +1,66 @@
 import './styles.css';
+import { useState } from 'react';
+/* import MyContext from '../../../contexts/myContext'; */
 import { LateralNav } from '../../LateralNav';
 import {
-    Button,
     FormGroup,
     FormControlLabel,
-    Checkbox
+    Switch
 } from '@mui/material';
 
 export const Management = () => {
+
+    /* Swtich Aluno */
+    const [checkedStudent, setCheckedStudent] = useState(false);
+    /* const [studentLink, setStudentLink] = useState("") */
+
+    const handleChangeStudent = (event) => {
+        setCheckedStudent(event.target.checked)
+        /* checkedStudent ? setStudentLink("/RegisterStudent") : setStudentLink("/Maintenance") */
+    }
+
+    /* Switch Empresa */
+    const [checkedCompany, setCheckedCompany] = useState(false);
+    /* const [companyLink, setCompanyLink] = useState("") */
+
+    const handleChangeCompany = (event) => {
+        setCheckedCompany(event.target.checked)
+        /* checkedCompany ? setCheckedCompany("/RegisterCompany") : setCheckedCompany("/Maintenance") */
+    }
+
+
+
     return (
+
+
         <div className="management-container">
-
             <LateralNav />
-
             <div className="management-content">
                 <div className="access-area">
-
                     <div className="access-header">
-                        <h1>Ficha de Cadastro</h1>
+                        <h1>Liberar Ficha de Cadastro</h1>
                     </div>
-
                     <hr />
-
-                    <div className="access-select-label">
-                        <h2>Tipo de usuário: </h2>
-                    </div>
-
                     <div className="access-select">
                         <FormGroup row className='access-select-group'>
-
                             <FormControlLabel
-                                control={<Checkbox />}
+                                control={<Switch />}
                                 label="Aluno"
-                                sx={{ '& .MuiSvgIcon-root': { fontSize: 35 } }}
+                                checked={checkedStudent}
+                                onChange={handleChangeStudent}
                             />
-
                             <FormControlLabel
-                                control={<Checkbox />}
+                                control={<Switch />}
                                 label="Empresa"
-                                sx={{ '& .MuiSvgIcon-root': { fontSize: 35 } }}
+                                checked={checkedCompany}
+                                onChange={handleChangeCompany}
                             />
-
                         </FormGroup>
                     </div>
-
-                    <div className="access-buttom-area">
-                        <Button
-                            variant={"contained"}
-                            sx={{
-                                width: '358px',
-                                height: '50px',
-                                borderRadius: '10px',
-                                fontFamily: 'Space Grotesk',
-                                fontSize: '14px',
-                                weight: '700',
-                                backgroundColor: '#000000'
-                            }}
-                        >
-                            Liberar acesso
-                        </Button>
-                    </div>
-
                 </div>
             </div>
-
         </div>
+
+
     )
 }

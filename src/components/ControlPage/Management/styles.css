@@ -24,6 +24,9 @@
 
 .access-header {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .access-area h1 {
@@ -36,34 +39,22 @@
     width: 99%;
 }
 
-.access-select-label {
-    width: 100%;
-}
-
-.access-select-label h2 {
-    padding: 2rem 1.7rem;
-}
-
 .access-select {
     width: 100%;
-    margin-top: 20px;
+    height: 100%;
+    display: flex;
+    align-items: cener;
+    justify-content: center;
 }
 
 .access-select-group {
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 5rem 0;
 }
 
-.access-buttom-area {
-    height: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-bottom: 10px;
-}
 
 @media screen and (max-width: 1200px) {
     .access-area {
@@ -75,9 +66,6 @@
         font-size: 28px;
     }
 
-    .access-select-label h2 {
-        font-size: 22px;
-    }
 }
 
 @media screen and (max-width: 505px) {
@@ -99,15 +87,9 @@
         display: none;
     }
 
-    .access-select-label h2 {
-        font-size: 18px;
-    }
-
     .access-select-group :last-child {
         font-size: 30;
     }
 
-    .access-buttom-area :first-child{
-        width: 200px;
-    }
+
 }
