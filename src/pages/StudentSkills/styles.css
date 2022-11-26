@@ -1,44 +1,53 @@
 * {
     font-family: 'Inter';
 }
+
 .student-skills-container {
     width: 100%;
     height: 100vh;
     display: flex;
 }
+
 .register {
     display: flex;
     width: 73%;
     margin: 3rem;
     padding-left: 3rem;
 }
+
 .register-header {
     justify-content: space-between;
 }
+
 .back-button {
     display: flex;
     margin-bottom: 10px;
 }
+
 .back-button a {
     font-weight: 600;
     text-decoration: none;
     color: #2B2C33;
 }
+
 .back-arrow {
     margin-top: 2px;
     color: #2B2C33;
 }
+
 .title h1 {
     font-size: 48px;
     font-weight: 700;
     font-family: 'Space Grotesk';
 }
+
 .title h2 {
     margin-top: 15px;
     font-size: 22px;
     font-family: 'Inter';
     font-weight: 400;
 }
+
 .register-header h1::after {
     content: '';
     display: block;
@@ -49,12 +58,15 @@
     position: absolute;
     border-radius: 10px;
 }
+
 .skill-group {
-    margin-top: 42px; 
+    margin-top: 42px;
 }
+
 .hard-skills {
     margin-bottom: 30px;
 }
+
 #question-label {
     font-weight: 600;
     font-size: 19px;
@@ -62,53 +74,102 @@
     font-weight: 400;
     margin-bottom: 0px;
 }
+
 .checkbox-group-area {
     display: flex;
 }
+
 .checkbox-group {
     padding-bottom: 5px;
 }
+
 .checkbox-outro {
     margin-top: -5px;
 }
+
 .checkbox-group :last-child {
     font-family: 'Roboto';
 }
+
+.confirm-modal-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirm-area {
+    width: 35%;
+    height: 45%;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.confirm-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45%;
+}
+
+.confirm-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.modal-button-container {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 @media screen and (max-width: 1709px) {
     .student-skills-container {
         height: 100%;
     }
 }
+
 @media screen and (max-width: 1439px) {
     #skills-form {
         width: 100%;
         align-items: center;
         justify-content: center;
         margin-left: 22%;
-    }  
+    }
 }
+
 @media screen and (max-width: 999px) {
     #skills-form {
         text-align: justify;
     }
+
     .checkbox-group-area {
         display: block;
     }
 }
+
 @media screen and (max-width: 671px) {
     .register {
         width: 100%;
     }
+
     #skills-form {
         width: 100%;
         align-items: center;
         justify-content: center;
         margin-left: -71px;
-        text-align: justify; 
+        text-align: justify;
     }
+
     #question-label {
         font-size: 16px;
     }
+
     .checkbox-group :last-child {
         font-size: 14px;
     }

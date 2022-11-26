@@ -1,4 +1,5 @@
 import './App.css';
+import { MyContext } from './contexts/myContext';
 import {
   BrowserRouter as Router,
   Route,
@@ -22,7 +23,9 @@ function App() {
       <div className="App">
         <Routes>
 
-          <Route exact path="/" element={<LandingPage/>}/>
+            <Route exact path="/" element={<LandingPage/>}/>
+            <Route path="/Management" element={<Management/>}/>
+
           <Route path="/LoginPorto" element={<LoginPorto/>}/>
           <Route path="/RegisterStudent" element={<RegisterStudent/>}/>
           <Route path="/StudentForms" element={<StudentForms/>}/>
@@ -32,7 +35,6 @@ function App() {
           <Route path="/RegisterCompany" element={<RegisterCompany/>}/>
           <Route path="/MainPage" element={<MainPage/>}/>
           <Route path="/Uni" element={<Uni/>}/>
-          <Route path="/Management" element={<Management/>}/>
           <Route path="/Maintenance" element={<Maintenance/>}/>
           
         </Routes>

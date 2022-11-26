@@ -5,11 +5,13 @@ import {
     FaUniversity,
     FaRegBuilding,
     FaSignOutAlt,
+    FaCalendarAlt
 } from 'react-icons/fa'
+import { AiOutlineCalendar } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 
 export const LateralNav = () => {
-    return(
+    return (
         <div className="lateral-container">
             <div className="lateral-nav">
                 <div className="logo-area">
@@ -22,13 +24,25 @@ export const LateralNav = () => {
                     <ul>
 
                         <li>
+                            <Link className="lateral-button-area" to="/Dashboard" id='link'>
+
+                                <div className="icon">
+                                    <FaHome size={30} />
+                                </div>
+
+                                <div className="button-label">Home</div>
+
+                            </Link>
+                        </li>
+
+                        <li>
                             <Link className="lateral-button-area" to="/MainPage" id='link'>
 
                                 <div className="icon">
-                                    <FaHome size={30}/>
+                                    <FaCalendarAlt size={30} />
                                 </div>
 
-                                <div className="button-label">Painel Inicial</div>
+                                <div className="button-label">Mentorias</div>
 
                             </Link>
                         </li>
@@ -37,7 +51,7 @@ export const LateralNav = () => {
                             <Link className="lateral-button-area" to="/Uni" id='link'>
 
                                 <div className="icon">
-                                    <FaUniversity size={30}/>
+                                    <FaUniversity size={30} />
                                 </div>
 
                                 <div className="button-label">Instituições</div>
@@ -49,7 +63,7 @@ export const LateralNav = () => {
                             <Link className="lateral-button-area" to="/Management" id='link'>
 
                                 <div className="icon">
-                                    <FaUsersCog size={30}/>
+                                    <FaUsersCog size={30} />
                                 </div>
 
                                 <div className="button-label">Gestão</div>
@@ -63,11 +77,11 @@ export const LateralNav = () => {
                     <Link className="exit" to="/LoginPorto" id='link'>
 
                         <div className="icon">
-                            <FaSignOutAlt size={30}/>
+                            <FaSignOutAlt size={30} />
                         </div>
-                        
+
                         <div className="button-label">Sair</div>
-                        
+
                     </Link>
                 </div>
             </div>

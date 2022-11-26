@@ -1,12 +1,13 @@
 import './styles.css';
 import { useState } from 'react';
-/* import MyContext from '../../../contexts/myContext'; */
+
 import { LateralNav } from '../../LateralNav';
 import {
     FormGroup,
     FormControlLabel,
     Switch
 } from '@mui/material';
+import MyContext from '../../../contexts/myContext';
 
 export const Management = () => {
 
@@ -32,35 +33,33 @@ export const Management = () => {
 
     return (
 
-
-        <div className="management-container">
-            <LateralNav />
-            <div className="management-content">
-                <div className="access-area">
-                    <div className="access-header">
-                        <h1>Liberar Ficha de Cadastro</h1>
-                    </div>
-                    <hr />
-                    <div className="access-select">
-                        <FormGroup row className='access-select-group'>
-                            <FormControlLabel
-                                control={<Switch />}
-                                label="Aluno"
-                                checked={checkedStudent}
-                                onChange={handleChangeStudent}
-                            />
-                            <FormControlLabel
-                                control={<Switch />}
-                                label="Empresa"
-                                checked={checkedCompany}
-                                onChange={handleChangeCompany}
-                            />
-                        </FormGroup>
+            <div className="management-container">
+                <LateralNav />
+                <div className="management-content">
+                    <div className="access-area">
+                        <div className="access-header">
+                            <h1>Liberar Ficha de Cadastro</h1>
+                        </div>
+                        <hr />
+                        <div className="access-select">
+                            <FormGroup row className='access-select-group'>
+                                <FormControlLabel
+                                    control={<Switch />}
+                                    label="Aluno"
+                                    checked={checkedStudent}
+                                    onChange={handleChangeStudent}
+                                />
+                                <FormControlLabel
+                                    control={<Switch />}
+                                    label="Empresa"
+                                    checked={checkedCompany}
+                                    onChange={handleChangeCompany}
+                                />
+                            </FormGroup>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
 
     )
 }

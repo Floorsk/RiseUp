@@ -10,10 +10,11 @@ import {
     FormControlLabel,
     FormLabel,
     Radio,
-    Button
+    Button,
+    Modal
 } from '@mui/material';
 import { useState } from 'react';
-import { AiOutlineLeft } from 'react-icons/ai';
+import { AiOutlineLeft, AiOutlineCheckCircle } from 'react-icons/ai';
 
 export const Uni = () => {
     const [course, setCourse] = useState();
@@ -34,6 +35,10 @@ export const Uni = () => {
         setTurma(event.target.value)
     }
 
+    /* Abrir e Fechar o modal */
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 
     return (
         <div className="uni-container">
@@ -154,9 +159,43 @@ export const Uni = () => {
                                     weight: '700',
                                     backgroundColor: '#000000'
                                 }}
+                                onClick={() => { handleOpen(); }}
                             >
                                 Adiconar nova instituição
                             </Button>
+                            <Modal
+                                open={open}
+                                onClose={handleClose}
+                            >
+                                <div className="confirm-modal-container">
+                                    <div className="confirm-area">
+                                        <div className="confirm-icon">
+                                            <AiOutlineCheckCircle size={80} color="#2A55D9" />
+                                        </div>
+                                        <div className="confirm-title">
+                                            <h1>Cadastro Confirmado!</h1>
+                                        </div>
+                                        <div className="modal-button-container">
+                                            <Button
+                                                variant={"contained"}
+                                                sx={{
+                                                    width: '180px',
+                                                    height: '40px',
+                                                    borderRadius: '10px',
+                                                    fontFamily: 'Space Grotesk',
+                                                    fontSize: '16px',
+                                                    weight: '700',
+                                                    backgroundColor: '#000000',
+                                                }}
+                                                onClick={() => { handleClose(); }}
+                                            >
+                                                Ok
+                                            </Button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </Modal>
                         </div>
                     </div>
                 </div>

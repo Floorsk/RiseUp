@@ -1,5 +1,6 @@
 import './styles.css'
 import { Button } from '@mui/material'
+import { useContext } from 'react';
 
 // icons import
 import { AiOutlineUser, AiOutlineFundProjectionScreen, AiOutlineApartment, AiOutlineCalendar } from "react-icons/ai";
@@ -10,15 +11,18 @@ import { TwitterSquareFilled, FacebookFilled, LinkedinFilled } from "@ant-design
 
 
 // images import
-import info from './imgs/jpg/welcome.jpg'
+import info from './imgs/png/welcome.png'
 import students from './imgs/jpg/student.jpg'
 import companies from './imgs/jpg/company.jpg'
 import details from './imgs/jpg/details.jpg'
-import rogerio from './imgs/jpg/rogerio.jpg'
-import marco from './imgs/jpg/marco.jpg'
-import flavia from './imgs/jpg/flavia.jpg'
+import rogerio from './imgs/png/rogerio.png'
+import marco from './imgs/png/marco.png'
+import flavia from './imgs/png/flavia.png'
+import { MyContext } from '../../contexts/myContext';
+
 
 export const LandingPage = () => {
+
     return (
         <div className='home-container'>
             <div className="presentation">
@@ -107,7 +111,7 @@ export const LandingPage = () => {
 
                         <div className="text">
                             <h2>+12</h2>
-                            <p>Instituições de esnsino superior</p>
+                            <p>Instituições de ensino superior</p>
                         </div>
                     </div>
 
@@ -185,7 +189,7 @@ export const LandingPage = () => {
 
                     <div className="card">
                         <p>"Na residência Onboard, os jovens são moldados para o sucesso na área de tecnologia, e isso para as empresas é muito importante."</p>
-                        <div className="icone"> <h3>Flávia Brito</h3> <img src={ flavia } /> </div>
+                        <div className="icone"> <h3>Flávia<br/> Brito</h3> <img src={ flavia } /> </div>
                     </div>
                 </div>
             </div>
@@ -200,7 +204,6 @@ export const LandingPage = () => {
                     <ul>
                         <h3>Sobre nós</h3>
                         <p>Home</p>
-                        <p>Coordenator</p>
                         <p>Us</p>
                         <p>About</p>
                         <p>Contact</p>
@@ -214,7 +217,6 @@ export const LandingPage = () => {
                         <p>Ted Robertson</p>
                         <p>Annette Russell</p>
                         <p>Jennie Mckinney</p>
-                        <p>Gloria Richards</p>
                     </ul>
                 </div>
 
@@ -222,7 +224,6 @@ export const LandingPage = () => {
                     <ul>
                         <h3>Porto Digital</h3>
                         <p>Philip Jones</p>
-                        <p>Product</p>
                         <p>Colleen Russell</p>
                         <p>Marvin Hawkins</p>
                         <p>Bruce Simmmons</p>
