@@ -1,5 +1,5 @@
 import './styles.css';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 
 import { LateralNav } from '../../LateralNav';
 import {
@@ -7,28 +7,41 @@ import {
     FormControlLabel,
     Switch
 } from '@mui/material';
-import MyContext from '../../../contexts/myContext';
+import { RegisterContext } from '../../../contexts/RegisterContext';
 
 export const Management = () => {
 
+    const {recieveStuLink, recieveComLink} = useContext(RegisterContext)
+
     /* Swtich Aluno */
+
+    const [studentLocal, setStudentLocal] = useState();
     const [checkedStudent, setCheckedStudent] = useState(false);
-    /* const [studentLink, setStudentLink] = useState("") */
+    
+    console.log(checkedStudent)
+
+    const [studentLink, setStudentLink] = useState("/Maintenance")
+    recieveStuLink(studentLink)
 
     const handleChangeStudent = (event) => {
         setCheckedStudent(event.target.checked)
-        /* checkedStudent ? setStudentLink("/RegisterStudent") : setStudentLink("/Maintenance") */
+
+        !checkedStudent ? setStudentLink("/RegisterStudent") : setStudentLink("/Maintenance")
+
     }
+    
 
     /* Switch Empresa */
     const [checkedCompany, setCheckedCompany] = useState(false);
-    /* const [companyLink, setCompanyLink] = useState("") */
+    console.log(checkedCompany)
+
+    const [companyLink, setCompanyLink] = useState("/Maintenance")
+    recieveComLink(companyLink)
 
     const handleChangeCompany = (event) => {
         setCheckedCompany(event.target.checked)
-        /* checkedCompany ? setCheckedCompany("/RegisterCompany") : setCheckedCompany("/Maintenance") */
+        !checkedCompany ? setCompanyLink("/RegisterCompany") : setCompanyLink("/Maintenance")
     }
-
 
 
     return (

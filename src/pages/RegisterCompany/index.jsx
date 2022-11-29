@@ -28,19 +28,21 @@ export const RegisterCompany = (props) => {
         </li>
     ));
 
+    /* Trocar Dia */
     const [day, setDay] = useState();
 
     const handleChangeDay = (event) => {
         setDay(event.target.value)
     }
 
-    const [turma, setTurma] = useState();
+    /* Trocar Horário */
+    const [hour, setHour] = useState();
 
-    const handleChangeTurma = (event) => {
-        setTurma(event.target.value)
+    const handleChangeHour = (event) => {
+        setHour(event.target.value)
     }
 
-    /* Abrir e Fechar o modal */
+    /* Abrir e Fechar o modal do cadastro */
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -204,11 +206,11 @@ export const RegisterCompany = (props) => {
                                     onChange={handleChangeDay}
                                     sx={{ color: '#2B2C33' }}
                                 >
-                                    <MenuItem value={1}>Segunda</MenuItem>
-                                    <MenuItem value={2}>Terça</MenuItem>
-                                    <MenuItem value={3}>Quarta</MenuItem>
+                                    <MenuItem value={0}>Segunda</MenuItem>
+                                    <MenuItem value={1}>Terça</MenuItem>
+                                    <MenuItem value={2}>Quarta</MenuItem>
                                     <MenuItem value={3}>Quinta</MenuItem>
-                                    <MenuItem value={3}>Sexta</MenuItem>
+                                    <MenuItem value={4}>Sexta</MenuItem>
                                 </Select>
                             </FormControl>
                         </div>
@@ -219,7 +221,8 @@ export const RegisterCompany = (props) => {
                                 <Select
                                     labelId='company-hour-select'
                                     label="Horário"
-                                    onChange={handleChangeTurma}
+                                    value={hour}
+                                    onChange={handleChangeHour}
                                     sx={{ color: '#2B2C33' }}
                                 >
                                     <MenuItem value={0}>18:00</MenuItem>
@@ -231,6 +234,27 @@ export const RegisterCompany = (props) => {
                                 </Select>
                             </FormControl>
                         </div>
+
+                    </div>
+
+                    <div className="schedule-buttom-area">
+
+                        <Button
+                            variant={"contained"}
+                            sx={{
+                                width: '160px',
+                                height: '45px',
+                                borderRadius: '10px',
+                                fontFamily: 'Space Grotesk',
+                                fontSize: '12px',
+                                weight: '700',
+                                backgroundColor: '#000000'
+                            }}
+                            onClick={() => {}}
+
+                        >
+                            Adcionar Horário
+                        </Button>
 
                     </div>
 
@@ -263,7 +287,7 @@ export const RegisterCompany = (props) => {
                                 backgroundColor: '#000000'
                             }}
                             onClick={() => { handleOpen(); }}
-                            
+
                         >
                             Enviar
                         </Button>

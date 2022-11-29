@@ -1,6 +1,7 @@
 import './styles.css'
 import { Button } from '@mui/material'
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
+import { RegisterContext } from '../../contexts/RegisterContext';
 
 // icons import
 import { AiOutlineUser, AiOutlineFundProjectionScreen, AiOutlineApartment, AiOutlineCalendar } from "react-icons/ai";
@@ -18,10 +19,19 @@ import details from './imgs/jpg/details.jpg'
 import rogerio from './imgs/png/rogerio.png'
 import marco from './imgs/png/marco.png'
 import flavia from './imgs/png/flavia.png'
-import { MyContext } from '../../contexts/myContext';
+
+
 
 
 export const LandingPage = () => {
+
+    /* Recebendo valor da página de manuntenção com os resultados do swtich */
+
+    const [linkValue, setLinkValue] = useState("");
+
+    const {recieveStuLink} = useContext(RegisterContext);
+
+    /* setLinkValue(recieveStuLink.value); */
 
     return (
         <div className='home-container'>
@@ -51,7 +61,7 @@ export const LandingPage = () => {
                                         weight: '700',
                                         backgroundColor: '#fdae50'
                                     }}
-                                    href="/RegisterStudent"
+                                    href={linkValue}
                                 >
                                     estudante
                                 </Button>

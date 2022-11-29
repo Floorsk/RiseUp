@@ -149,6 +149,11 @@
   .select-date :first-child {
     width: 160px;
   }
+
+  .schedule-buttom-area {
+    width: 100%;
+    
+  }
   
   .company-button-advance {
     width: 100%;
