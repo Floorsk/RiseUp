@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+Sistema Onboard - 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deploy do projeto no vercel: https://rise-up-nu.vercel.app
 
-## Available Scripts
+- Implementando solução - 
+  
+# Definir personas que implementarão dados por meio de forms/ vão consumir dessas informações: 
 
-In the project directory, you can run:
+  Aluno, Empresa, Porto Digital
 
-### `npm start`
+# Desenvolver uma LandingPage que explica de forma clara e dinâmica de como funciona a residência onboard e as experiência
+de alunos e empresas que participaram do projeto.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Dentro da LandingPage deve-se conter dois botões que iram levar para os devidos forms: RegisterStudent e RegisterCompany
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - RegisterStudent
+  
+      Deve conter uma sequência de inputs que devem ser preenchidas pelo aluno e que foi disponibilizada pelo cliente (Porto Digital),
+    sendo dividido em 3 sessões para melhor visualização do usuário.
+    
+  -RegisterCompany
+  
+      Se trata de um forms mais elaborado para a empresa, com perguntas mais abertas e focadas no desafio que deverá ser proposto além de
+    contar com uma parte voltada para a seleção de horários que foi prioridade 1 no backlog acordado com o cliente.
+    
+#ControlPainel
 
-### `npm test`
+  O painel de controle do Porto Digital é a parte central do projeto, nele o porto receberá os squads formados a partir da base de dados
+fornecida pelos cadastros das duas outras personas ( aluno e empresa ) e com isso terá a função administrativa de alterar qualquer atributo
+dos squads o que lhe poupará tempo, já que, antes o processo de comunicar com a empresa e formar os squads eram feitos manualmente e geravam
+diversos problemas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ Outra função do painel de controle será a de adicionar uma nova instituição e informar quantas turmas ela possui, informação que será disponível por
+seleção no cadastro do estudante. Essa opção foi adicionada devido ao grande crescimento do projeto no qual estão gerando novas parcerias com outras instituições.
+     
+ 
