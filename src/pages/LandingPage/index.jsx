@@ -21,8 +21,6 @@ import marco from './imgs/png/marco.png'
 import flavia from './imgs/png/flavia.png'
 
 
-
-
 export const LandingPage = () => {
 
     /* Recebendo valor da página de manuntenção com os resultados do swtich */

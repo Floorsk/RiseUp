@@ -12,6 +12,7 @@ import { useState, useEffect } from 'react';
 
 export const MainPage = () => {
 
+    /* HandleEvents */
     const [day, setDay] = useState();
 
     const handleChangeDay = (event) => {
@@ -24,9 +25,9 @@ export const MainPage = () => {
         setDay(event.target.value)
     }
 
-    const [cards, setCards] = useState([]);
-    
+    const [cards, setCards] = useState([])
 
+    /* Contador */
     const [num, setNum] = useState(0)
     const cardSquad = <SquadCard id="squad-card" numero={num}/>
     
@@ -34,8 +35,6 @@ export const MainPage = () => {
         setCards([...cards, cardSquad])
         setNum(num + 1)
     }
-
-    /* Contador */
 
 
     return(
@@ -47,7 +46,7 @@ export const MainPage = () => {
                 </div>
                 <hr />
                 <div className="filter">
-
+                    {/* Filtro dia e residência */}
                     <div className="week">
                         <FormControl variant="outlined" fullWidth>
                             <InputLabel id="weekday-select-label">Dia da semana</InputLabel>

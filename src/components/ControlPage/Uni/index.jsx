@@ -17,6 +17,9 @@ import { useState } from 'react';
 import { AiOutlineLeft, AiOutlineCheckCircle } from 'react-icons/ai';
 
 export const Uni = () => {
+
+    /* HandleEvents */
+
     const [course, setCourse] = useState();
 
     const handleChangeCourse = (event) => {

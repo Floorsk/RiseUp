@@ -1,3 +1,5 @@
+/* UniPage */
+
 h1,
 h2 {
     margin: 0;
@@ -79,6 +81,8 @@ h2 {
 .register-uni-button {
     margin: 40px 0;
 }
+
+/* Responsividade da UNI */
 
 @media screen and (max-width: 1200px) {
     .uni-content {
