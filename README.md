@@ -2,7 +2,7 @@ Sistema Onboard -
 
 Deploy do projeto no vercel: https://rise-up-nu.vercel.app
 
-- Implementando solução - 
+# Implementando solução
   
 # Definir personas que implementarão dados por meio de forms/ vão consumir dessas informações: 
 
