@@ -18,7 +18,7 @@ de alunos e empresas que participaram do projeto.
       Deve conter uma sequência de inputs que devem ser preenchidas pelo aluno e que foi disponibilizada pelo cliente (Porto Digital),
     sendo dividido em 3 sessões para melhor visualização do usuário.
     
-  -RegisterCompany
+  - RegisterCompany
   
       Se trata de um forms mais elaborado para a empresa, com perguntas mais abertas e focadas no desafio que deverá ser proposto além de
     contar com uma parte voltada para a seleção de horários que foi prioridade 1 no backlog acordado com o cliente.
