@@ -59,7 +59,7 @@ export const LandingPage = () => {
                                         weight: '700',
                                         backgroundColor: '#fdae50'
                                     }}
-                                    href={linkValue}
+                                    href="/RegisterStudent"
                                 >
                                     estudante
                                 </Button>
